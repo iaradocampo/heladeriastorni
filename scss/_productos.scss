@@ -1,0 +1,55 @@
+  .imgText {
+      font-size: 3em;
+      font-family: 'Playfair Display', serif;
+ }
+
+.images {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgBox {
+    width: 100vh;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid white;
+}
+
+.cafeteria {
+    width: 100%;
+    height: 100%;
+}
+
+.hotel {
+    width: 100%;
+    height: 100%;
+
+}
+
+.catering {
+    width: 100%;
+    height: 100%;
+
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.5s ease-in-out;
+    &:hover{
+        transform: scale(1.1); 
+        background: rgba(0, 0, 0, 0.7);
+    }
+}

@@ -1,0 +1,118 @@
+/*****************HISTORIA**************/
+/*****************MAIN******************/
+.main {
+    background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 700px;
+}
+
+/***************************************/
+/*****************BOX*******************/
+.main__box {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+}
+
+.main__texto {
+    width: 30%;
+    height: 100%;
+    text-align: right;
+}
+
+.historia {
+    width: 100%;
+    height: auto;
+}
+
+/***************************************/
+/*****************TEXTO*****************/
+.main__titulo {
+    padding: 100px 150px 0px 0px;
+    font-size: $font * 0.8;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.5em;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 400px;
+        height: 2px;
+        background-color: #e1c4ef;
+        margin-top: 45px;
+        right: 170px;
+    }
+}
+
+.main__parrafo {
+    padding: 50px 150px 0px 0px;
+    font-size: $font * 3.5;
+    color: white;
+}
+
+/***************************************/
+/************MEDIA QUERIES**************/
+@media(max-width: 1280px) and (min-width: 486px) {
+    .main__titulo {
+        font-size: 0.7em;
+        padding-right: 3rem;
+
+        &::after {
+            width: 12.5rem;
+            right: 4rem;
+        }
+    }
+
+    .main__parrafo {
+        font-size: 2.5em;
+        text-align: right;
+        padding-right: 3rem;
+    }
+
+    .main__texto {
+        width: 50%;
+        height: auto;
+    }
+
+    .historia__texto {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 486px) and (min-width: 320px) {
+    .main__titulo {
+        font-size: 0.6em;
+        padding-right: 0.5rem;
+
+        &::after {
+            width: 12rem;
+            right: 1.5rem;
+        }
+    }
+
+    .main__parrafo {
+        font-size: 2em;
+        text-align: right;
+        padding-right: 0.5rem;
+    }
+
+    .main__texto {
+        width: 50%;
+        height: auto;
+    }
+
+    .historia__texto {
+        width: 100%;
+        height: auto;
+        text-align: left;
+        padding-top: 10px;
+    }
+}
+
+/***************************************/
