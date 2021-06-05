@@ -148,20 +148,7 @@ nav {
 
 .coments {
   height: 50rem;
-  padding-top: 20rem; }
-
-.carouselBox {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  justify-content: space-evenly; }
-
-.carouselText {
-  width: 30%;
-  height: 20rem;
-  background: #e1c4ef;
-  border-radius: 0;
-  padding: 10px; }
+  padding-top: 1.6rem; }
 
 .footerText {
   display: flex;
@@ -171,16 +158,6 @@ nav {
 .border-top {
   border-top: 2px solid #8c65a1 !important;
   margin-top: 70px; }
-
-.carousel-indicators li {
-  height: 15px;
-  width: 15px;
-  border-radius: 50%;
-  margin-left: 10px; }
-
-.carousel-control-prev {
-  width: 5%;
-  margin-left: 300px; }
 
 /***************************************/
 /*****************TEXTO*****************/
@@ -217,13 +194,14 @@ nav {
 
 .carouselTitle {
   font-size: 1.2em;
-  text-align: left;
-  color: black; }
+  color: black;
+  margin-bottom: 0; }
 
 .carouselParrafo {
   font-size: 1em;
   text-align: left;
-  color: black; }
+  color: black;
+  margin-top: 0.7em; }
 
 .titleFooter {
   display: flex;
@@ -259,14 +237,51 @@ small {
   text-align: left;
   padding-bottom: 17px; }
 
+.carouselBox {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly; }
+
+.carouselText {
+  width: 30%;
+  height: 20rem;
+  background: #e1c4ef;
+  border-radius: 0;
+  padding: 1.3rem; }
+
 /***************************************/
 /*****************ICONS*****************/
+.carousel-indicators li {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-left: 10px; }
+
+.carousel-control-prev {
+  width: 1%;
+  height: 1%;
+  padding-top: 150px; }
+
+.carousel-control-next {
+  width: 1%;
+  height: 1%;
+  padding-top: 150px; }
+
+.bi-star-fill {
+  font-size: 0.8em;
+  color: #812a71; }
+
 .list-inline-item {
   font-size: 1.1em;
   padding-left: 8px;
   padding-top: 20px; }
 
-.bi {
+.bi-instagram,
+.bi-facebook,
+.bi-twitter,
+.bi-caret-left-fill,
+.bi-caret-right-fill {
   color: #812a71; }
 
 /***************************************/
@@ -301,10 +316,8 @@ footer {
     min-height: 200px; } }
 
 /***************************************/
-.imgText {
-  font-size: 3em;
-  font-family: 'Playfair Display', serif; }
-
+/***************PRODUCTOS***************/
+/*****************BOX*******************/
 .images {
   width: 100%;
   height: 100vh;
@@ -318,18 +331,6 @@ footer {
   position: relative;
   overflow: hidden;
   border-right: 1px solid white; }
-
-.cafeteria {
-  width: 100%;
-  height: 100%; }
-
-.hotel {
-  width: 100%;
-  height: 100%; }
-
-.catering {
-  width: 100%;
-  height: 100%; }
 
 .capa {
   position: absolute;
@@ -347,13 +348,34 @@ footer {
     transform: scale(1.1);
     background: rgba(0, 0, 0, 0.7); }
 
+/***************************************/
+/*****************TEXTO*****************/
+.imgText {
+  font-size: 3em;
+  font-family: 'Playfair Display', serif; }
+
+/***************************************/
+/****************IMAGES*****************/
+.cafeteria {
+  width: 100%;
+  height: 100%; }
+
+.hotel {
+  width: 100%;
+  height: 100%; }
+
+.catering {
+  width: 100%;
+  height: 100%; }
+
+/***************************************/
 /*****************HISTORIA**************/
 /*****************MAIN******************/
 .main {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
   background-size: cover;
   width: 100%;
-  min-height: 700px; }
+  min-height: 44rem; }
 
 /***************************************/
 /*****************BOX*******************/
@@ -375,7 +397,7 @@ footer {
 /***************************************/
 /*****************TEXTO*****************/
 .main__titulo {
-  padding: 100px 150px 0px 0px;
+  padding: 6rem 9rem 0 0;
   font-size: 0.8em;
   text-transform: uppercase;
   color: white;
@@ -383,14 +405,14 @@ footer {
   .main__titulo::after {
     position: absolute;
     content: '';
-    width: 400px;
-    height: 2px;
+    width: 25rem;
+    height: 0.1rem;
     background-color: #e1c4ef;
-    margin-top: 45px;
-    right: 170px; }
+    margin-top: 3rem;
+    right: 11rem; }
 
 .main__parrafo {
-  padding: 50px 150px 0px 0px;
+  padding: 3rem 9rem 0 0;
   font-size: 3.5em;
   color: white; }
 
@@ -414,7 +436,7 @@ footer {
     width: 100%;
     height: auto;
     text-align: left;
-    padding-top: 10px; } }
+    padding-top: 0.6rem; } }
 
 @media (max-width: 486px) and (min-width: 320px) {
   .main__titulo {
@@ -434,7 +456,7 @@ footer {
     width: 100%;
     height: auto;
     text-align: left;
-    padding-top: 10px; } }
+    padding-top: 0.6rem; } }
 
 /***************************************/
 /*****************LOCALES***************/
@@ -443,22 +465,22 @@ footer {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/heladoBackground.jpeg");
   background-size: cover;
   width: 100%;
-  min-height: 700px; }
+  min-height: 44rem; }
 
 /***************************************/
 /*****************SECCION***************/
 .mapa {
-  margin: 100px 0px 100px 0px; }
+  margin: 6rem 0 6rem 0; }
 
 iframe {
-  margin-top: 40px; }
+  margin-top: 2.5rem; }
 
 /***************************************/
 /*****************TEXTO*****************/
 .subtitulo {
   text-align: center;
   font-size: 2.5em;
-  margin-bottom: 30px;
+  margin-bottom: 1.9rem;
   color: #812a71; }
 
 /***************************************/
@@ -468,15 +490,15 @@ iframe {
     font-size: 1.6em; }
   .mapa {
     text-align: center;
-    margin: 30px 0 30px 0; }
+    margin: 1.9rem 0 1.9rem 0; }
   iframe {
     width: 100%;
-    height: 400px; } }
+    height: 25rem; } }
 
 @media (max-width: 768px) and (min-width: 320px) {
   iframe {
     width: 100%;
-    height: 300px; } }
+    height: 19rem; } }
 
 @media (max-width: 540px) and (min-height: 320px) {
   .subtitulo {

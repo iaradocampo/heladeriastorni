@@ -4,7 +4,7 @@
     background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
     background-size: cover;
     width: 100%;
-    min-height: 700px;
+    min-height: 44rem;
 }
 
 /***************************************/
@@ -30,8 +30,8 @@
 /***************************************/
 /*****************TEXTO*****************/
 .main__titulo {
-    padding: 100px 150px 0px 0px;
-    font-size: $font * 0.8;
+    padding: 6rem 9rem 0 0;
+    font-size: 0.8em;
     text-transform: uppercase;
     color: white;
     letter-spacing: 0.5em;
@@ -39,17 +39,17 @@
     &::after {
         position: absolute;
         content: '';
-        width: 400px;
-        height: 2px;
-        background-color: #e1c4ef;
-        margin-top: 45px;
-        right: 170px;
+        width: 25rem;
+        height: 0.1rem;
+        background-color: $light-violet;
+        margin-top: 3rem;
+        right: 11rem;
     }
 }
 
 .main__parrafo {
-    padding: 50px 150px 0px 0px;
-    font-size: $font * 3.5;
+    padding: 3rem 9rem 0 0;
+    font-size: 3.5em;
     color: white;
 }
 
@@ -81,7 +81,7 @@
         width: 100%;
         height: auto;
         text-align: left;
-        padding-top: 10px;
+        padding-top: 0.6rem;
     }
 }
 
@@ -111,7 +111,7 @@
         width: 100%;
         height: auto;
         text-align: left;
-        padding-top: 10px;
+        padding-top: 0.6rem;
     }
 }
 

@@ -1,15 +1,13 @@
-$background-box-footer: rgb(225, 196, 239);
-$background-box: rgb(244, 234, 249);
-$background-nav: #851370;
+$light-violet: rgb(225, 196, 239);
+$lighter-violet: rgb(244, 234, 249);
+$strong-violet: #851370;
 $hover: rgb(132, 88, 155);
 $color-font: #812a71;
-$font: 1em;
-$padding: 0.4em;
 
 /*****************BODY******************/
 body {
     font-family: 'Questrial', sans-serif;
-    background-color: $background-box;
+    background-color: $lighter-violet;
 }
 
 /***************************************/
@@ -34,7 +32,7 @@ nav {
         height: 2px;
         bottom: -15px;
         margin: -5px 0;
-        background-color: $background-nav;
+        background-color: $strong-violet;
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.4s ease-in-out 0s;
@@ -48,8 +46,8 @@ nav {
 
 .navLink {
     display: flex;
-    font-size: $font * 1.2;
-    color: #851370;
+    font-size: 1.2em;
+    color: $strong-violet;
 
     &:hover {
         color: $hover;
@@ -86,8 +84,8 @@ nav {
 }
 
 .dropdown-item {
-    font-size: $font;
-    color: $background-nav;
+    font-size: 1em;
+    color: $strong-violet;
     transition: background .25s, box-shadow .15s;
 
     &:hover {
@@ -135,7 +133,7 @@ nav {
 
 .boxes {
     height: 32rem;
-    background: linear-gradient(180deg, $background-box 50%, $background-box-footer 50%);
+    background: linear-gradient(180deg, $lighter-violet 50%, $light-violet 50%);
 }
 
 .box {
@@ -150,7 +148,7 @@ nav {
 .texto {
     width: 80%;
     height: 15rem;
-    background: $background-box;
+    background: $lighter-violet;
     border-radius: 0.6rem;
     box-shadow: 0rem 0rem 0.4rem rgba(0, 0, 0, 0.5);
     text-align: center;
@@ -164,11 +162,11 @@ nav {
 }
 
 .form-control {
-    background-color: $background-box;
+    background-color: $lighter-violet;
 
     &:focus {
-        background-color: $background-box;
-        border-color: $background-nav;
+        background-color: $lighter-violet;
+        border-color: $strong-violet;
         outline: none !important;
         outline-width: 0 !important;
         box-shadow: none;
@@ -188,29 +186,14 @@ nav {
     position: relative;
 
     &:hover {
-        background-color: $background-nav;
+        background-color: $strong-violet;
         transition: all 0.4s;
     }
 }
 
 .coments {
     height: 50rem;
-    padding-top: 20rem;
-}
-
-.carouselBox {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-evenly;
-}
-
-.carouselText {
-    width: 30%;
-    height: 20rem;
-    background: $background-box-footer;
-    border-radius: 0;
-    padding: 10px;
+    padding-top: 1.6rem;
 }
 
 .footerText {
@@ -224,27 +207,13 @@ nav {
     margin-top: 70px;
 }
 
-.carousel-indicators {
-    li {
-        height: 15px;
-        width: 15px;
-        border-radius: 50%;
-        margin-left: 10px;
-    }
-}
-
-.carousel-control-prev{
-    width: 5%;
-    margin-left: 300px;
-}
-
 /***************************************/
 /*****************TEXTO*****************/
 .title {
     display: flex;
     justify-content: center;
     margin-top: 4rem;
-    font-size: $font* 2;
+    font-size: 2em;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -254,21 +223,21 @@ nav {
     display: flex;
     justify-content: center;
     margin-top: 1.3rem;
-    font-size: $font * 2;
+    font-size: 2em;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     font-style: italic;
 }
 
 .subtituloBox {
-    font-size: $font * 2;
+    font-size: 2em;
     text-transform: uppercase;
     color: $color-font;
-    padding-top: $padding;
+    padding-top: 0.4em;
 }
 
 .parrafo {
-    font-size: $font * 1.1;
+    font-size: 1.1em;
     text-transform: lowercase;
     color: rgb(0, 0, 0);
 
@@ -278,22 +247,23 @@ nav {
 }
 
 .carouselTitle {
-    font-size: $font * 1.2;
-    text-align: left;
+    font-size: 1.2em;
     color: rgb(0, 0, 0);
+    margin-bottom: 0;
 }
 
 .carouselParrafo {
-    font-size: $font;
+    font-size: 1em;
     text-align: left;
     color: rgb(0, 0, 0);
+    margin-top: 0.7em;
 }
 
 .titleFooter {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    font-size: $font * 1.6;
+    font-size: 1.6em;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -315,7 +285,7 @@ small {
 }
 
 .parrafoFooter {
-    font-size: $font;
+    font-size: 1em;
     color: rgb(0, 0, 0);
     text-align: left;
 
@@ -330,22 +300,67 @@ small {
     padding-bottom: 17px;
 }
 
+.carouselBox {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.carouselText {
+    width: 30%;
+    height: 20rem;
+    background: $light-violet;
+    border-radius: 0;
+    padding: 1.3rem;
+}
+
 /***************************************/
 /*****************ICONS*****************/
+.carousel-indicators {
+    li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
+
+.carousel-control-prev {
+    width: 1%;
+    height: 1%;
+    padding-top: 150px;
+}
+
+.carousel-control-next {
+    width: 1%;
+    height: 1%;
+    padding-top: 150px;
+}
+
+.bi-star-fill {
+    font-size: 0.8em;
+    color: $color-font;
+}
+
 .list-inline-item {
     font-size: 1.1em;
     padding-left: 8px;
     padding-top: 20px;
 }
 
-.bi {
+.bi-instagram,
+.bi-facebook,
+.bi-twitter,
+.bi-caret-left-fill,
+.bi-caret-right-fill {
     color: $color-font;
 }
 
 /***************************************/
 /*****************FOOTER****************/
 footer {
-    background-color: $background-box-footer;
+    background-color: $light-violet;
     height: 550px;
     min-height: 100px;
     text-align: center;

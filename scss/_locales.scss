@@ -4,16 +4,17 @@
     background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/heladoBackground.jpeg");
     background-size: cover;
     width: 100%;
-    min-height: 700px;
+    min-height: 44rem;
 }
 
 /***************************************/
 /*****************SECCION***************/
 .mapa {
-    margin: 100px 0px 100px 0px;
+    margin: 6rem 0 6rem 0;
 }
-iframe{
-    margin-top: 40px;
+
+iframe {
+    margin-top: 2.5rem;
 }
 
 /***************************************/
@@ -21,7 +22,7 @@ iframe{
 .subtitulo {
     text-align: center;
     font-size: 2.5em;
-    margin-bottom: 30px;
+    margin-bottom: 1.9rem;
     color: $color-font;
 }
 
@@ -34,19 +35,19 @@ iframe{
 
     .mapa {
         text-align: center;
-        margin: 30px 0 30px 0;
+        margin: 1.9rem 0 1.9rem 0;
     }
 
     iframe {
         width: 100%;
-        height: 400px;
+        height: 25rem;
     }
 }
 
 @media(max-width: 768px) and (min-width: 320px) {
     iframe {
         width: 100%;
-        height: 300px;
+        height: 19rem;
     }
 }
 
