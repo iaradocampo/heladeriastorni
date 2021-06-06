@@ -98,12 +98,12 @@ nav {
 /****************IMAGES*****************/
 #img1 {
     width: 100vw;
-    height: 750px;
+    height: 700px;
 }
 
 #img2 {
     width: 100vw;
-    height: 750px;
+    height: 700px;
 }
 
 .item {
@@ -127,8 +127,12 @@ nav {
     margin: auto;
 }
 
-.mainGeneral {
-    margin-top: 10rem;
+.main {
+    padding-top: 2.5rem;
+}
+
+.description {
+    margin-top: 9rem;
 }
 
 .boxes {
@@ -157,147 +161,13 @@ nav {
     margin: 20px auto 0px auto;
 }
 
-.form {
-    width: 100%;
-}
-
-.form-control {
-    background-color: $lighter-violet;
-
-    &:focus {
-        background-color: $lighter-violet;
-        border-color: $strong-violet;
-        outline: none !important;
-        outline-width: 0 !important;
-        box-shadow: none;
-    }
-}
-
-.button {
-    background-color: #8c65a1;
-    outline: none;
-    border: 0;
-    color: rgb(255, 255, 255);
-    width: 100%;
-    height: 100%;
-    text-transform: uppercase;
-    border-radius: 2px;
-    cursor: pointer;
-    position: relative;
-
-    &:hover {
-        background-color: $strong-violet;
-        transition: all 0.4s;
-    }
-}
-
 .coments {
     height: 50rem;
-    padding-top: 1.6rem;
+    padding-top: 5rem;
 }
 
-.footerText {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-}
-
-.border-top {
-    border-top: 2px solid #8c65a1 !important;
-    margin-top: 70px;
-}
-
-/***************************************/
-/*****************TEXTO*****************/
-.title {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    font-size: 2em;
-    color: $color-font;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-}
-
-.subtitle {
-    display: flex;
-    justify-content: center;
-    margin-top: 1.3rem;
-    font-size: 2em;
-    color: $color-font;
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-}
-
-.subtituloBox {
-    font-size: 2em;
-    text-transform: uppercase;
-    color: $color-font;
-    padding-top: 0.4em;
-}
-
-.parrafo {
-    font-size: 1.1em;
-    text-transform: lowercase;
-    color: rgb(0, 0, 0);
-
-    &::first-letter {
-        text-transform: uppercase;
-    }
-}
-
-.carouselTitle {
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
-    margin-bottom: 0;
-}
-
-.carouselParrafo {
-    font-size: 1em;
-    text-align: left;
-    color: rgb(0, 0, 0);
-    margin-top: 0.7em;
-}
-
-.titleFooter {
-    display: flex;
-    justify-content: center;
-    padding-top: 2rem;
-    font-size: 1.6em;
-    color: $color-font;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-}
-
-small {
-    font-size: 0.9em;
-    color: rgb(0, 0, 0);
-    padding-right: 8px;
-    padding-top: 20px;
-}
-
-.tituloParrafo {
-    font-size: 1.2em;
-    font-family: 'Playfair Display', serif;
-    color: rgb(0, 0, 0);
-    text-align: left;
-    padding-top: 35px;
-}
-
-.parrafoFooter {
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    text-align: left;
-
-    &:hover {
-        text-decoration: none;
-        color: rgb(0, 0, 0);
-    }
-}
-
-.liFooter {
-    text-align: left;
-    padding-bottom: 17px;
+.carouselComent {
+    padding-top: 2.5rem;
 }
 
 .carouselBox {
@@ -313,6 +183,57 @@ small {
     background: $light-violet;
     border-radius: 0;
     padding: 1.3rem;
+}
+
+/***************************************/
+/*****************TEXTO*****************/
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.subtitle {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.parrafo {
+    font-size: 1.1em;
+    text-transform: lowercase;
+    color: rgb(0, 0, 0);
+
+    &::first-letter {
+        text-transform: uppercase;
+    }
+}
+
+.subtituloBox {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: $color-font;
+    padding-top: 0.4em;
+}
+
+.carouselTitle {
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0;
+}
+
+.carouselParrafo {
+    font-size: 1em;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    margin-top: 0.7em;
 }
 
 /***************************************/
@@ -359,11 +280,97 @@ small {
 
 /***************************************/
 /*****************FOOTER****************/
-footer {
+.footer {
     background-color: $light-violet;
     height: 550px;
     min-height: 100px;
     text-align: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.form-control {
+    background-color: $lighter-violet;
+
+    &:focus {
+        background-color: $lighter-violet;
+        border-color: $strong-violet;
+        outline: none !important;
+        outline-width: 0 !important;
+        box-shadow: none;
+    }
+}
+
+.footerText {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.button {
+    background-color: #8c65a1;
+    outline: none;
+    border: 0;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+
+    &:hover {
+        background-color: $strong-violet;
+        transition: all 0.4s;
+    }
+}
+
+.titleFooter {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: 1.6em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.tituloParrafo {
+    font-size: 1.2em;
+    font-family: 'Playfair Display', serif;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding-top: 35px;
+}
+
+.parrafoFooter {
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    text-align: left;
+
+    &:hover {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+}
+
+.liFooter {
+    text-align: left;
+    padding-bottom: 17px;
+}
+
+.border-top {
+    border-top: 2px solid #8c65a1 !important;
+    margin-top: 70px;
+}
+
+small {
+    font-size: 0.9em;
+    color: rgb(0, 0, 0);
+    padding-right: 8px;
+    padding-top: 20px;
 }
 
 /***************************************/

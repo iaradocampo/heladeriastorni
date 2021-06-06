@@ -70,11 +70,11 @@ nav {
 /****************IMAGES*****************/
 #img1 {
   width: 100vw;
-  height: 750px; }
+  height: 700px; }
 
 #img2 {
   width: 100vw;
-  height: 750px; }
+  height: 700px; }
 
 .item {
   width: 100%;
@@ -93,8 +93,11 @@ nav {
   object-fit: cover;
   margin: auto; }
 
-.mainGeneral {
-  margin-top: 10rem; }
+.main {
+  padding-top: 2.5rem; }
+
+.description {
+  margin-top: 9rem; }
 
 .boxes {
   height: 32rem;
@@ -119,123 +122,12 @@ nav {
   padding: -20px auto 0px auto;
   margin: 20px auto 0px auto; }
 
-.form {
-  width: 100%; }
-
-.form-control {
-  background-color: #f4eaf9; }
-  .form-control:focus {
-    background-color: #f4eaf9;
-    border-color: #851370;
-    outline: none !important;
-    outline-width: 0 !important;
-    box-shadow: none; }
-
-.button {
-  background-color: #8c65a1;
-  outline: none;
-  border: 0;
-  color: white;
-  width: 100%;
-  height: 100%;
-  text-transform: uppercase;
-  border-radius: 2px;
-  cursor: pointer;
-  position: relative; }
-  .button:hover {
-    background-color: #851370;
-    transition: all 0.4s; }
-
 .coments {
   height: 50rem;
-  padding-top: 1.6rem; }
+  padding-top: 5rem; }
 
-.footerText {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 30px; }
-
-.border-top {
-  border-top: 2px solid #8c65a1 !important;
-  margin-top: 70px; }
-
-/***************************************/
-/*****************TEXTO*****************/
-.title {
-  display: flex;
-  justify-content: center;
-  margin-top: 4rem;
-  font-size: 2em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  text-align: center; }
-
-.subtitle {
-  display: flex;
-  justify-content: center;
-  margin-top: 1.3rem;
-  font-size: 2em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  font-style: italic; }
-
-.subtituloBox {
-  font-size: 2em;
-  text-transform: uppercase;
-  color: #812a71;
-  padding-top: 0.4em; }
-
-.parrafo {
-  font-size: 1.1em;
-  text-transform: lowercase;
-  color: black; }
-  .parrafo::first-letter {
-    text-transform: uppercase; }
-
-.carouselTitle {
-  font-size: 1.2em;
-  color: black;
-  margin-bottom: 0; }
-
-.carouselParrafo {
-  font-size: 1em;
-  text-align: left;
-  color: black;
-  margin-top: 0.7em; }
-
-.titleFooter {
-  display: flex;
-  justify-content: center;
-  padding-top: 2rem;
-  font-size: 1.6em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  text-align: center; }
-
-small {
-  font-size: 0.9em;
-  color: black;
-  padding-right: 8px;
-  padding-top: 20px; }
-
-.tituloParrafo {
-  font-size: 1.2em;
-  font-family: 'Playfair Display', serif;
-  color: black;
-  text-align: left;
-  padding-top: 35px; }
-
-.parrafoFooter {
-  font-size: 1em;
-  color: black;
-  text-align: left; }
-  .parrafoFooter:hover {
-    text-decoration: none;
-    color: black; }
-
-.liFooter {
-  text-align: left;
-  padding-bottom: 17px; }
+.carouselComent {
+  padding-top: 2.5rem; }
 
 .carouselBox {
   display: flex;
@@ -249,6 +141,49 @@ small {
   background: #e1c4ef;
   border-radius: 0;
   padding: 1.3rem; }
+
+/***************************************/
+/*****************TEXTO*****************/
+.title {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 1.3rem; }
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 2em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  font-style: italic; }
+
+.parrafo {
+  font-size: 1.1em;
+  text-transform: lowercase;
+  color: black; }
+  .parrafo::first-letter {
+    text-transform: uppercase; }
+
+.subtituloBox {
+  font-size: 2em;
+  text-transform: uppercase;
+  color: #812a71;
+  padding-top: 0.4em; }
+
+.carouselTitle {
+  font-size: 1.2em;
+  color: black;
+  margin-bottom: 0; }
+
+.carouselParrafo {
+  font-size: 1em;
+  text-align: left;
+  color: black;
+  margin-top: 0.7em; }
 
 /***************************************/
 /*****************ICONS*****************/
@@ -286,11 +221,81 @@ small {
 
 /***************************************/
 /*****************FOOTER****************/
-footer {
+.footer {
   background-color: #e1c4ef;
   height: 550px;
   min-height: 100px;
   text-align: center; }
+
+.form {
+  width: 100%; }
+
+.form-control {
+  background-color: #f4eaf9; }
+  .form-control:focus {
+    background-color: #f4eaf9;
+    border-color: #851370;
+    outline: none !important;
+    outline-width: 0 !important;
+    box-shadow: none; }
+
+.footerText {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px; }
+
+.button {
+  background-color: #8c65a1;
+  outline: none;
+  border: 0;
+  color: white;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative; }
+  .button:hover {
+    background-color: #851370;
+    transition: all 0.4s; }
+
+.titleFooter {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+  font-size: 1.6em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: center; }
+
+.tituloParrafo {
+  font-size: 1.2em;
+  font-family: 'Playfair Display', serif;
+  color: black;
+  text-align: left;
+  padding-top: 35px; }
+
+.parrafoFooter {
+  font-size: 1em;
+  color: black;
+  text-align: left; }
+  .parrafoFooter:hover {
+    text-decoration: none;
+    color: black; }
+
+.liFooter {
+  text-align: left;
+  padding-bottom: 17px; }
+
+.border-top {
+  border-top: 2px solid #8c65a1 !important;
+  margin-top: 70px; }
+
+small {
+  font-size: 0.9em;
+  color: black;
+  padding-right: 8px;
+  padding-top: 20px; }
 
 /***************************************/
 /**************MEDIA QUERIES************/
@@ -317,7 +322,43 @@ footer {
 
 /***************************************/
 /***************PRODUCTOS***************/
+.titleSecondary {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  margin-bottom: 1rem; }
+
+.subtitleSecondary {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  font-style: italic; }
+
+.locales {
+  width: 450px;
+  height: 700px;
+  object-fit: cover;
+  margin: auto; }
+
+.secPrimera {
+  padding-top: 4rem; }
+
+.secSegunda {
+  padding-top: 4rem;
+  padding-bottom: 5rem; }
+
 /*****************BOX*******************/
+.mainProduc {
+  padding-top: 3rem; }
+
+.descriptionLocales {
+  padding-top: 3rem; }
+
 .images {
   width: 100%;
   height: 100vh;
@@ -356,14 +397,8 @@ footer {
 
 /***************************************/
 /****************IMAGES*****************/
-.cafeteria {
-  width: 100%;
-  height: 100%; }
-
-.hotel {
-  width: 100%;
-  height: 100%; }
-
+.cafeteria,
+.hotel,
 .catering {
   width: 100%;
   height: 100%; }
@@ -371,7 +406,7 @@ footer {
 /***************************************/
 /*****************HISTORIA**************/
 /*****************MAIN******************/
-.main {
+.mainHistoria {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
   background-size: cover;
   width: 100%;
@@ -461,7 +496,7 @@ footer {
 /***************************************/
 /*****************LOCALES***************/
 /*****************MAIN******************/
-.mainBox {
+.mainLocales {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/heladoBackground.jpeg");
   background-size: cover;
   width: 100%;

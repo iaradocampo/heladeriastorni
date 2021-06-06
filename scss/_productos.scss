@@ -1,5 +1,45 @@
 /***************PRODUCTOS***************/
+.titleSecondary{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+.subtitleSecondary{
+    display: flex;
+    justify-content: center;
+    font-size: 1.6em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+
+.locales{
+    width: 450px;
+    height: 700px;
+    object-fit: cover;
+    margin: auto;
+}
+
+.secPrimera{
+    padding-top: 4rem;
+}
+
+.secSegunda{
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+}
 /*****************BOX*******************/
+.mainProduc{
+    padding-top: 3rem;
+}
+.descriptionLocales{
+    padding-top: 3rem;
+}
 .images {
     width: 100%;
     height: 100vh;
@@ -44,21 +84,11 @@
 
 /***************************************/
 /****************IMAGES*****************/
-.cafeteria {
-    width: 100%;
-    height: 100%;
-}
-
-.hotel {
-    width: 100%;
-    height: 100%;
-
-}
-
+.cafeteria,
+.hotel,
 .catering {
     width: 100%;
     height: 100%;
-
 }
 
 /***************************************/
