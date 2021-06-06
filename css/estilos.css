@@ -322,43 +322,7 @@ small {
 
 /***************************************/
 /***************PRODUCTOS***************/
-.titleSecondary {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-  margin-bottom: 1rem; }
-
-.subtitleSecondary {
-  display: flex;
-  justify-content: center;
-  font-size: 1.6em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  font-style: italic; }
-
-.locales {
-  width: 450px;
-  height: 700px;
-  object-fit: cover;
-  margin: auto; }
-
-.secPrimera {
-  padding-top: 4rem; }
-
-.secSegunda {
-  padding-top: 4rem;
-  padding-bottom: 5rem; }
-
 /*****************BOX*******************/
-.mainProduc {
-  padding-top: 3rem; }
-
-.descriptionLocales {
-  padding-top: 3rem; }
-
 .images {
   width: 100%;
   height: 100vh;
@@ -389,11 +353,41 @@ small {
     transform: scale(1.1);
     background: rgba(0, 0, 0, 0.7); }
 
+.mainProduc {
+  padding-top: 3rem; }
+
+.descriptionLocales {
+  padding-top: 3rem; }
+
+.secPrimera {
+  padding-top: 4rem; }
+
+.secSegunda {
+  padding-top: 4rem;
+  padding-bottom: 5rem; }
+
 /***************************************/
 /*****************TEXTO*****************/
 .imgText {
   font-size: 3em;
   font-family: 'Playfair Display', serif; }
+
+.titleSecondary {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  margin-bottom: 1rem; }
+
+.subtitleSecondary {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  font-style: italic; }
 
 /***************************************/
 /****************IMAGES*****************/
@@ -403,50 +397,59 @@ small {
   width: 100%;
   height: 100%; }
 
+.locales {
+  width: 450px;
+  height: 700px;
+  object-fit: cover;
+  margin: auto; }
+
 /***************************************/
 /*****************HISTORIA**************/
-/*****************MAIN******************/
-.mainHistoria {
+/*****************BOX*******************/
+.banner {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
-/***************************************/
-/*****************BOX*******************/
-.main__box {
+.boxBanner {
   display: flex;
   justify-content: flex-end;
   width: 100%;
   height: 100%; }
 
-.main__texto {
+.bannerTexto {
   width: 30%;
   height: 100%;
   text-align: right; }
 
-.historia {
+.mainHistoria {
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding-top: 4rem;
+  margin-bottom: 4rem; }
+
+.border-left {
+  border-left: 2px solid #8c65a1 !important; }
 
 /***************************************/
 /*****************TEXTO*****************/
-.main__titulo {
+.bannerTitulo {
   padding: 6rem 9rem 0 0;
   font-size: 0.8em;
   text-transform: uppercase;
   color: white;
   letter-spacing: 0.5em; }
-  .main__titulo::after {
+  .bannerTitulo::after {
     position: absolute;
     content: '';
     width: 25rem;
     height: 0.1rem;
     background-color: #e1c4ef;
     margin-top: 3rem;
-    right: 11rem; }
+    right: 10rem; }
 
-.main__parrafo {
+.bannerParrafo {
   padding: 3rem 9rem 0 0;
   font-size: 3.5em;
   color: white; }
@@ -495,30 +498,19 @@ small {
 
 /***************************************/
 /*****************LOCALES***************/
-/*****************MAIN******************/
-.mainLocales {
+/*****************BOX*******************/
+.bannerLocales {
   background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/heladoBackground.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
-/***************************************/
-/*****************SECCION***************/
 .mapa {
   margin: 6rem 0 6rem 0; }
 
 iframe {
   margin-top: 2.5rem; }
 
-/***************************************/
-/*****************TEXTO*****************/
-.subtitulo {
-  text-align: center;
-  font-size: 2.5em;
-  margin-bottom: 1.9rem;
-  color: #812a71; }
-
-/***************************************/
 /************MEDIA QUERIES**************/
 @media (max-width: 1280px) and (min-width: 768px) {
   .subtitulo {

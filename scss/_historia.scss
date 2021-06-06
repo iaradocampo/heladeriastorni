@@ -1,35 +1,39 @@
 /*****************HISTORIA**************/
-/*****************MAIN******************/
-.mainHistoria {
+/*****************BOX*******************/
+.banner {
     background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/cucuruchoHistoria.jpg");
     background-size: cover;
     width: 100%;
     min-height: 44rem;
 }
 
-/***************************************/
-/*****************BOX*******************/
-.main__box {
+.boxBanner {
     display: flex;
     justify-content: flex-end;
     width: 100%;
     height: 100%;
 }
 
-.main__texto {
+.bannerTexto {
     width: 30%;
     height: 100%;
     text-align: right;
 }
 
-.historia {
+.mainHistoria {
     width: 100%;
     height: auto;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.border-left {
+    border-left: 2px solid #8c65a1 !important;
 }
 
 /***************************************/
 /*****************TEXTO*****************/
-.main__titulo {
+.bannerTitulo {
     padding: 6rem 9rem 0 0;
     font-size: 0.8em;
     text-transform: uppercase;
@@ -43,11 +47,11 @@
         height: 0.1rem;
         background-color: $light-violet;
         margin-top: 3rem;
-        right: 11rem;
+        right: 10rem;
     }
 }
 
-.main__parrafo {
+.bannerParrafo {
     padding: 3rem 9rem 0 0;
     font-size: 3.5em;
     color: white;

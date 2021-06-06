@@ -1,14 +1,12 @@
 /*****************LOCALES***************/
-/*****************MAIN******************/
-.mainLocales {
+/*****************BOX*******************/
+.bannerLocales {
     background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url("../img/heladoBackground.jpeg");
     background-size: cover;
     width: 100%;
     min-height: 44rem;
 }
 
-/***************************************/
-/*****************SECCION***************/
 .mapa {
     margin: 6rem 0 6rem 0;
 }
@@ -17,16 +15,6 @@ iframe {
     margin-top: 2.5rem;
 }
 
-/***************************************/
-/*****************TEXTO*****************/
-.subtitulo {
-    text-align: center;
-    font-size: 2.5em;
-    margin-bottom: 1.9rem;
-    color: $color-font;
-}
-
-/***************************************/
 /************MEDIA QUERIES**************/
 @media(max-width: 1280px) and (min-width: 768px) {
     .subtitulo {
