@@ -70,11 +70,15 @@ nav {
 /****************IMAGES*****************/
 #img1 {
   width: 100vw;
-  height: 700px; }
+  height: 700px;
+  object-fit: cover;
+  margin: auto; }
 
 #img2 {
   width: 100vw;
-  height: 700px; }
+  height: 700px;
+  object-fit: cover;
+  margin: auto; }
 
 .item {
   width: 100%;
@@ -89,10 +93,6 @@ nav {
 
 /***************************************/
 /*****************BOXES*****************/
-.d-block {
-  object-fit: cover;
-  margin: auto; }
-
 .main {
   padding-top: 2.5rem; }
 
@@ -159,7 +159,8 @@ nav {
   font-size: 2em;
   color: #812a71;
   font-family: 'Playfair Display', serif;
-  font-style: italic; }
+  font-style: italic;
+  text-align: center; }
 
 .parrafo {
   font-size: 1.1em;
@@ -172,7 +173,7 @@ nav {
   font-size: 2em;
   text-transform: uppercase;
   color: #812a71;
-  padding-top: 0.4em; }
+  padding-top: 0.4rem; }
 
 .carouselTitle {
   font-size: 1.2em;
@@ -193,11 +194,7 @@ nav {
   border-radius: 50%;
   margin-left: 10px; }
 
-.carousel-control-prev {
-  width: 1%;
-  height: 1%;
-  padding-top: 150px; }
-
+.carousel-control-prev,
 .carousel-control-next {
   width: 1%;
   height: 1%;
@@ -221,10 +218,10 @@ nav {
 
 /***************************************/
 /*****************FOOTER****************/
-.footer {
+footer {
   background-color: #e1c4ef;
-  height: 550px;
-  min-height: 100px;
+  width: 100%;
+  min-height: 550px;
   text-align: center; }
 
 .form {
@@ -254,7 +251,8 @@ nav {
   text-transform: uppercase;
   border-radius: 2px;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  font-size: 1em; }
   .button:hover {
     background-color: #851370;
     transition: all 0.4s; }
@@ -299,26 +297,39 @@ small {
 
 /***************************************/
 /**************MEDIA QUERIES************/
-@media (max-width: 1280px) and (min-width: 300px) {
-  .navLink {
-    font-size: 1em; }
-  .subtitle {
-    text-align: center; }
-  .subtituloBox {
-    font-size: 1.5em; }
-  .parrafo {
-    font-size: 0.9em;
-    padding: 0.1em; }
-  .d-block {
-    min-width: 100vh;
-    min-height: 400px; } }
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
+  #img1 {
+    min-width: 500px;
+    min-height: 500px;
+    object-fit: cover;
+    margin: auto; }
+  #img2 {
+    min-width: 500px;
+    min-height: 500px;
+    object-fit: cover;
+    margin: auto; }
   .boxes {
     height: auto; }
-  .d-block {
-    min-width: 100vh;
-    min-height: 200px; } }
+  .subtituloBox {
+    padding-top: 0.3rem;
+    margin-bottom: 0; }
+  .carouselText {
+    height: 25rem; }
+  .carousel-control-prev,
+  .carousel-control-next {
+    padding-top: 200px; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .button {
+    top: 0;
+    padding: 6px 16px; }
+  .footerText {
+    display: flex;
+    flex-wrap: wrap; }
+  .list-inline {
+    margin: auto; }
+  small {
+    margin-bottom: 2rem; } }
 
 /***************************************/
 /***************PRODUCTOS***************/
@@ -404,6 +415,66 @@ small {
   margin: auto; }
 
 /***************************************/
+/**************MEDIA QUERIES************/
+@media (max-width: 1024px) {
+  .locales {
+    width: 350px;
+    height: 700px; }
+  .images {
+    width: 100%;
+    height: 900px; }
+  .imgBox {
+    width: 100%;
+    height: 900px; }
+  .cafeteria,
+  .hotel,
+  .catering {
+    width: 400px;
+    height: 900px; }
+  .imgText {
+    text-align: center; } }
+
+@media (max-width: 768px) {
+  .locales {
+    width: 500px;
+    height: 350px;
+    display: flex;
+    justify-content: center; }
+  .images {
+    width: 100%;
+    height: 700px; }
+  .imgBox {
+    width: 100%;
+    height: 700px; }
+  .cafeteria,
+  .hotel,
+  .catering {
+    width: 400px;
+    height: 700px; }
+  .imgText {
+    font-size: 1.4em; }
+  .titleSecondary, .subtitleSecondary {
+    text-align: center; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .locales {
+    display: none; }
+  .images {
+    width: 100%;
+    height: 500px; }
+  .imgBox {
+    width: 100%;
+    height: 500px; }
+  .cafeteria,
+  .hotel,
+  .catering {
+    width: 300px;
+    height: 500px; }
+  .imgText {
+    font-size: 1em;
+    text-align: center; } }
+
+/***************************************/
 /*****************HISTORIA**************/
 /*****************BOX*******************/
 .banner {
@@ -456,45 +527,41 @@ small {
 
 /***************************************/
 /************MEDIA QUERIES**************/
-@media (max-width: 1280px) and (min-width: 486px) {
-  .main__titulo {
-    font-size: 0.7em;
-    padding-right: 3rem; }
-    .main__titulo::after {
-      width: 12.5rem;
+@media (max-width: 1024px) {
+  .bannerTexto {
+    width: 40%; }
+  .bannerTitulo {
+    padding: 2rem 3rem 0 0; }
+    .bannerTitulo::after {
       right: 4rem; }
-  .main__parrafo {
-    font-size: 2.5em;
-    text-align: right;
-    padding-right: 3rem; }
-  .main__texto {
-    width: 50%;
-    height: auto; }
-  .historia__texto {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding-top: 0.6rem; } }
+  .bannerParrafo {
+    padding: 2rem 3rem 0 0; } }
 
-@media (max-width: 486px) and (min-width: 320px) {
-  .main__titulo {
-    font-size: 0.6em;
-    padding-right: 0.5rem; }
-    .main__titulo::after {
-      width: 12rem;
-      right: 1.5rem; }
-  .main__parrafo {
-    font-size: 2em;
-    text-align: right;
-    padding-right: 0.5rem; }
-  .main__texto {
-    width: 50%;
-    height: auto; }
-  .historia__texto {
-    width: 100%;
-    height: auto;
-    text-align: left;
-    padding-top: 0.6rem; } }
+@media (max-width: 768px) {
+  .bannerTexto {
+    width: 60%; }
+  .bannerTitulo {
+    padding: 2rem 3rem 0 0; }
+    .bannerTitulo::after {
+      right: 4rem; }
+  .bannerParrafo {
+    padding: 1rem 3rem 0 0; } }
+
+@media (max-width: 414px) {
+  .bannerTexto {
+    width: 70%;
+    margin-top: 4rem; }
+  .bannerTitulo {
+    font-size: 0.8em;
+    padding: 0.8rem 1rem 0 0; }
+    .bannerTitulo::after {
+      right: 2rem;
+      width: 15rem; }
+  .bannerParrafo {
+    font-size: 2.5em;
+    padding: 1rem 1rem 0 0; }
+  .border-left {
+    border-left: none !important; } }
 
 /***************************************/
 /*****************LOCALES***************/
@@ -511,13 +578,9 @@ small {
 iframe {
   margin-top: 2.5rem; }
 
+/***************************************/
 /************MEDIA QUERIES**************/
-@media (max-width: 1280px) and (min-width: 768px) {
-  .subtitulo {
-    font-size: 1.6em; }
-  .mapa {
-    text-align: center;
-    margin: 1.9rem 0 1.9rem 0; }
+@media (max-width: 1024px) {
   iframe {
     width: 100%;
     height: 25rem; } }
@@ -526,10 +589,6 @@ iframe {
   iframe {
     width: 100%;
     height: 19rem; } }
-
-@media (max-width: 540px) and (min-height: 320px) {
-  .subtitulo {
-    font-size: 1.3em; } }
 
 /***************************************/
 /*****************CONTACTO**************/
@@ -617,11 +676,12 @@ fieldset {
 @media (max-width: 768px) and (min-width: 320px) {
   .titulo {
     font-size: 1.5em;
-    padding-top: 10px; }
+    padding-top: 6rem; }
   form {
     width: 100%;
     height: auto; }
-  button {
+  .btnEnviar,
+  .btnEliminar {
     margin: 10px;
     font-size: 10px; } }
 

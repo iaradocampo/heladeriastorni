@@ -99,11 +99,15 @@ nav {
 #img1 {
     width: 100vw;
     height: 700px;
+    object-fit: cover;
+    margin: auto;
 }
 
 #img2 {
     width: 100vw;
     height: 700px;
+    object-fit: cover;
+    margin: auto;
 }
 
 .item {
@@ -122,11 +126,6 @@ nav {
 
 /***************************************/
 /*****************BOXES*****************/
-.d-block {
-    object-fit: cover;
-    margin: auto;
-}
-
 .main {
     padding-top: 2.5rem;
 }
@@ -204,6 +203,7 @@ nav {
     color: $color-font;
     font-family: 'Playfair Display', serif;
     font-style: italic;
+    text-align: center;
 }
 
 .parrafo {
@@ -220,7 +220,7 @@ nav {
     font-size: 2em;
     text-transform: uppercase;
     color: $color-font;
-    padding-top: 0.4em;
+    padding-top: 0.4rem;
 }
 
 .carouselTitle {
@@ -247,12 +247,7 @@ nav {
     }
 }
 
-.carousel-control-prev {
-    width: 1%;
-    height: 1%;
-    padding-top: 150px;
-}
-
+.carousel-control-prev,
 .carousel-control-next {
     width: 1%;
     height: 1%;
@@ -280,10 +275,10 @@ nav {
 
 /***************************************/
 /*****************FOOTER****************/
-.footer {
+footer {
     background-color: $light-violet;
-    height: 550px;
-    min-height: 100px;
+    width: 100%;
+    min-height: 550px;
     text-align: center;
 }
 
@@ -320,6 +315,7 @@ nav {
     border-radius: 2px;
     cursor: pointer;
     position: relative;
+    font-size: 1em;
 
     &:hover {
         background-color: $strong-violet;
@@ -375,38 +371,58 @@ small {
 
 /***************************************/
 /**************MEDIA QUERIES************/
-@media(max-width: 1280px) and (min-width: 300px) {
-    .navLink {
-        font-size: 1em;
+@media (max-width: 768px) {
+
+    #img1 {
+        min-width: 500px;
+        min-height: 500px;
+        object-fit: cover;
+        margin: auto;
     }
 
-    .subtitle {
-        text-align: center;
+    #img2 {
+        min-width: 500px;
+        min-height: 500px;
+        object-fit: cover;
+        margin: auto;
     }
 
-    .subtituloBox {
-        font-size: 1.5em;
-    }
-
-    .parrafo {
-        font-size: 0.9em;
-        padding: 0.1em;
-    }
-
-    .d-block {
-        min-width: 100vh;
-        min-height: 400px;
-    }
-}
-
-@media screen and (max-width: 768px) {
     .boxes {
         height: auto;
     }
 
-    .d-block {
-        min-width: 100vh;
-        min-height: 200px;
+    .subtituloBox {
+        padding-top: 0.3rem;
+        margin-bottom: 0;
+    }
+
+    .carouselText {
+        height: 25rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        padding-top: 200px;
+    }
+
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .button {
+        top: 0;
+        padding: 6px 16px;
+    }
+
+    .footerText {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list-inline {
+        margin: auto;
+    }
+    small{
+        margin-bottom: 2rem;
     }
 }
 
