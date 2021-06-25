@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!--logo que cumple funcion de home-->
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logoBrand" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo-brand" alt="logo"></a>
                 <!--menú desplegable responsive-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,8 +46,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <!-- menu dropdown -->
-                        <li class="navItem dropdown">
-                            <a class="navLink dropdown" href="productos.html" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="productos.html" id="navbarDropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">
                                 Productos
                             </a>
@@ -57,14 +57,14 @@
                                 <a class="dropdown-item" href="catering.html">Para catering</a>
                             </div>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="historia.html">Sobre nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Sobre nosotros</a>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="locales.html">Donde encontrarnos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Donde encontrarnos</a>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -72,31 +72,50 @@
         </nav>
     </header>
     <!--section con breve descripcion de la sección-->
-    <section class="bannerCatering">
-        <div class="container-fluid">
+    <section class="catering-icon">
+        <div class="container">
             <!--texto descriptivo sobre la imagen-->
-            <div class="boxBanner">
-                <div class="bannerTexto">
-                    <p class="bannerTitulo">productos</p>
-                    <p class="bannerParrafo">Venta de productos para catering</p>
-                    <a class="btn" href="#" role="button">
-                        <p class="btnText">Más información</p>
-                    </a>
+            <div class="box-banner">
+                <div id="banner">
+                    <p id="banner-titulo">productos</p>
+                    <p id="banner-parrafo">Venta de productos para catering</p>
+                    <div class="row">
+                        <div class="col-lg-4 border-right">
+                            <i class="bi bi-truck"></i>
+                            <p class="titulo-catering">Catering de helados con envíos</p>
+                            <p class="parrafo-catering">Lo enviamos en 24hs dentro de CABA y fuera de CABA en 72hs.</p>
+                        </div>
+                        <div class="col-lg-4 border-right">
+                            <p class="titulo-catering">Helado para catering en formato grande</p>
+                            <p class="parrafo-catering">Cubetas de 6 y 2.75 L. Fáciles de almacenar y no perece el
+                                producto</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="titulo-catering">Helados para catering en tarrinas</p>
+                            <p class="parrafo-catering">Tenemos tarrinas pequeñas de Storni, ya rellenas.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="btn-catering">
+                <a class="btn" href="#form-catering" role="button">
+                    <p class="btnText">Más información</p>
+                </a>
             </div>
         </div>
     </section>
     <!--contenido principal de nuestra sección-->
-    <main class="mainProduc">
+    <main class="main">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="imgCafeteria">
-                        <img src="img/helado3.jpeg" class="heladoMuestra" alt="helado de muestra servido en una copa">
+                    <div class="img-animation">
+                        <img src="img/helado-3.jpeg" class="helado-animation"
+                            alt="helado de muestra servido en un plato con decoración">
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 col-sm-12">
-                    <h1 class="titleSecondary">Helados para catering</h1>
+                    <h1 class="title-big">Helados para catering</h1>
                     <p class="parrafo">Todos nuestros helados son elaborados sin conservantes, sin colorantes, sin
                         semielaborados. Contamos también con una selección de helados aptos para diabéticos y veganos.
                     </p>
@@ -108,9 +127,11 @@
             </div>
         </div>
     </main>
-    <section>
+    <section class="description" id="form-catering">
         <div class="container">
-            <p class="title">¿Queres agregar nuestros helados a tu catering?</p>
+            <p class="title-center">¿Queres ser proveedor de nuestros helados?</p>
+            <p class="parrafo">Si tenes una cafetería, hotel/restaurante o catering y estás interesado en en ofrecer
+                nuestros productos, dejanos tus datos y nos pondremos en contacto a la brevedad.</p>
             <form class="form">
                 <div class="row">
                     <div class="col-lg-4 col-md-4 col-sm-12">
@@ -126,10 +147,43 @@
             </form>
         </div>
     </section>
+    <section class="description">
+        <div class="container">
+            <p class="title-left">Distribuidora de helados y postres para catering</p>
+            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iusto blanditiis quis,
+                provident harum mollitia nobis debitis dolore nemo doloremque.</p>
+            <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quod, corporis minus
+                dignissimos impedit atque quasi ad laudantium, labore error eaque id esse non assumenda nisi veniam
+                beatae magni voluptate, odio quia! Alias, laudantium reiciendis!</p>
+            <div class="space-section">
+                <p class="title-left">Servicio de venta de helados artesanales para catering en 24hs-72hs.</p>
+                <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere commodi aliquam
+                    vitae
+                    pariatur asperiores culpa necessitatibus perspiciatis temporibus, quas modi voluptas, non maxime ex
+                    perferendis.</p>
+                <p class="parrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure, ipsum. Repellendus
+                    sit
+                    dolore porro veniam possimus provident nobis, consectetur impedit?</p>
+            </div>
+            <div class="space-section">
+                <div class="space">
+                    <p class="title-left">Asegura el éxito de tu eventocon postres y helados artesanales para catering
+                        diferenrtes</p>
+                    <p class="parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis unde rerum
+                        adipisci
+                        minus voluptatibus sed enim sit deserunt laudantium dolores, laboriosam aut, praesentium numquam
+                        expedita, in perspiciatis itaque totam sunt.</p>
+                    <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis quidem corporis
+                        iure
+                        voluptatum error! Fuga accusantium necessitatibus natus aliquam! Recusandae?</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <!--pie de página principal que se utiliza en todas las secciones de nuestro sitio-->
     <footer class="col-lg-12 col-md-12 col-sm-12">
         <div class="container">
-            <p class="titleFooter">¿Queres formar parte del club Storni?</p>
+            <p class="title-footer">¿Queres formar parte del club Storni?</p>
             <p class="parrafo">sumate y recibí benefecios exclusivos.</p>
             <form class="form">
                 <div class="row">
@@ -148,32 +202,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Productos</p>
+                    <p class="titulo-parrafo">Productos</p>
                     <ul class="list-inline">
-                        <li class="liFooter"><a class="parrafoFooter" href="cafeteria.html">Cafeterías</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="hoteles.html">Hoteles y restaurantes</a>
+                        <li class="li-footer"><a class="parrafo-footer" href="cafeteria.html">Cafeterías</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="hoteles.html">Hoteles y restaurantes</a>
                         </li>
-                        <li class="liFooter"><a class="parrafoFooter" href="cafeteria.html">Catering</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="cafeteria.html">Catering</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Política y privacidad</p>
+                    <p class="titulo-parrafo">Política y privacidad</p>
                     <ul class="list-inline">
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Aviso legal</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Política de privacidad</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Política de la empresa</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Aviso legal</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Política de privacidad</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Política de la empresa</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Contacto</p>
-                    <p class="parrafoFooter">1111 1111</p>
-                    <p class="parrafoFooter">comercial@heladeriastorni.com</p>
-                    <p class="parrafoFooter">Santo Tomé 3854, Capital Federal (Suc. central)</p>
+                    <p class="titulo-parrafo">Contacto</p>
+                    <p class="parrafo-footer">1111 1111</p>
+                    <p class="parrafo-footer">comercial@heladeriastorni.com</p>
+                    <p class="parrafo-footer">Santo Tomé 3854, Capital Federal (Suc. central)</p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="footerText border-top">
+            <div class="footer-text border-top">
                 <ul class="list-inline mr-auto">
                     <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>

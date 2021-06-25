@@ -36,7 +36,7 @@
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <!--logo que cumple funcion de home-->
-                <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logoBrand" alt="logo"></a>
+                <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo-brand" alt="logo"></a>
                 <!--menú desplegable responsive-->
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -46,25 +46,25 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <!-- menu dropdown -->
-                        <li class="navItem dropdown">
-                            <a class="navLink dropdown-toggle" href="productos.html" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown" href="productos.html" id="navbarDropdown" role="button"
                                 aria-haspopup="true" aria-expanded="false">
                                 Productos
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Para cafeterías</a>
-                                <a class="dropdown-item" href="#">Para hoteles y restaurantes</a>
-                                <a class="dropdown-item" href="#">Para catering</a>
+                                <a class="dropdown-item" href="cafeteria.html">Para cafeterías</a>
+                                <a class="dropdown-item" href="hoteles.html">Para hoteles y restaurantes</a>
+                                <a class="dropdown-item" href="catering.html">Para catering</a>
                             </div>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="historia.html">Sobre nosotros</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="historia.html">Sobre nosotros</a>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="locales.html">Dónde encontrarnos</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="locales.html">Donde encontrarnos</a>
                         </li>
-                        <li class="navItem">
-                            <a class="navLink" href="contacto.html">Contacto</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -73,33 +73,33 @@
     </header>
     <!--section para negocios-->
     <section class="images">
-        <div class="imgBox">
-            <img src="img/cafeteria.jpg" class="cafeteria"
+        <div class="image-box">
+            <img src="img/cafeteria-productos.jpg" class="cafeteria"
                 alt="esta es una imagen de una cafetería que dirije a la sección cafetería para venta de helados">
             <div class="capa">
-                <p class="imgText">Cafeterías</p>
+                <a class="image-text" href="cafeteria.html">Cafeterías</a>
             </div>
         </div>
-        <div class="imgBox">
+        <div class="image-box">
             <img src="img/hotel.jpg" class="hotel"
                 alt="esta es una imagen de un hotel que dirije a la sección hoteles y restaurantes para venta de helados">
             <div class="capa">
-                <p class="imgText">Hoteles y restaurantes</p>
+                <a class="image-text" href="hoteles.html">Hoteles y restaurantes</a>
             </div>
         </div>
-        <div class="imgBox">
-            <img src="img/catering.jpg" class="catering"
+        <div class="image-box">
+            <img src="img/catering-productos.jpg" class="catering"
                 alt="esta es una imagen de una mesa de catering que dirije a la sección catering para venta de helados">
             <div class="capa">
-                <p class="imgText">Catering</p>
+                <a class="image-text" href="catering.html">Catering</a>
             </div>
         </div>
     </section>
     <!--contenido principal de nuestro sitio-->
-    <main class="mainProduc">
+    <main class="main">
         <div class="container">
             <h1 class="title">¡También somos proveedores de helados artesanales!</h1>
-            <p class="subtitleSecondary">Realizamos venta de helados artesanales para todo tipo de negocio.</p>
+            <p class="subtitle-center">Realizamos venta de helados artesanales para todo tipo de negocio.</p>
             <p class="parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis incidunt impedit
                 aliquid
                 in! Facilis illum eveniet quo id, quos tempora magni qui iure quisquam perspiciatis enim, laudantium
@@ -107,8 +107,8 @@
                 Quisquam reiciendis recusandae nostrum illo laudantium nam sunt totam ipsum sint quae!</p>
             <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur sint dolor iusto nihil
                 nulla explicabo! Enim laborum incidunt velit labore.</p>
-            <div class="descriptionLocales">
-                <h2 class="titleSecondary">Estos son los tipos de negocios que suelen elegirnos como sus proveedores.
+            <div class="space-section">
+                <h2 class="title-center">Estos son los tipos de negocios que suelen elegirnos como sus proveedores.
                 </h2>
                 <p class="parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam sunt recusandae
                     aperiam et laboriosam, harum omnis necessitatibus eveniet rerum, quas eius tempore corporis
@@ -127,16 +127,16 @@
         </div>
     </main>
     <!--section con descripción sobre los productos que provee la empresa-->
-    <section>
+    <section class="space">
         <div class="container">
-            <div class="secPrimera">
+            <div class="space-section">
                 <div class="row">
                     <div class="col-lg-5 col-md-12 col-sm-12">
                         <img src="img/heladoLocales.jpeg" class="locales"
                             alt="esta es una imagen de un helado servido en un tazón">
                     </div>
                     <div class="col-lg-7 col-md-12 col-sm-12">
-                        <p class="titleSecondary">Conoce nuestros productos para heladería con los mejores sabores de
+                        <p class="title-left">Conoce nuestros productos para heladería con los mejores sabores de
                             helados artesanales naturales</p>
                         <p class="parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam inventore
                             natus
@@ -165,10 +165,10 @@
                     </div>
                 </div>
             </div>
-            <div class="secSegunda">
+            <div class="space-section">
                 <div class="row">
                     <div class="col-lg-7 col-md-12 col-sm-12">
-                        <p class="titleSecondary">En Heladería Storni contamos con nuestra propia fábrica de helados
+                        <p class="title-left">En Heladería Storni contamos con nuestra propia fábrica de helados
                             situada
                             en el barrio de Villa del Parque, desde la cual innovamos y desarrollamos nuestra actividad
                             como
@@ -197,7 +197,7 @@
     <!--pie de página principal que se utiliza en todas las secciones de nuestro sitio-->
     <footer class="col-lg-12 col-md-12 col-sm-12">
         <div class="container">
-            <p class="titleFooter">¿Queres formar parte del club Storni?</p>
+            <p class="title-footer">¿Queres formar parte del club Storni?</p>
             <p class="parrafo">sumate y recibí benefecios exclusivos.</p>
             <form class="form">
                 <div class="row">
@@ -216,31 +216,32 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Productos</p>
+                    <p class="titulo-parrafo">Productos</p>
                     <ul class="list-inline">
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Cafeterías</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Hoteles y restaurantes</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Catering</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="cafeteria.html">Cafeterías</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="hoteles.html">Hoteles y restaurantes</a>
+                        </li>
+                        <li class="li-footer"><a class="parrafo-footer" href="cafeteria.html">Catering</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Política y privacidad</p>
+                    <p class="titulo-parrafo">Política y privacidad</p>
                     <ul class="list-inline">
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Aviso legal</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Política de privacidad</a></li>
-                        <li class="liFooter"><a class="parrafoFooter" href="#">Política de la empresa</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Aviso legal</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Política de privacidad</a></li>
+                        <li class="li-footer"><a class="parrafo-footer" href="#">Política de la empresa</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-12">
-                    <p class="tituloParrafo">Contacto</p>
-                    <p class="parrafoFooter">1111 1111</p>
-                    <p class="parrafoFooter">comercial@heladeriastorni.com</p>
-                    <p class="parrafoFooter">Santo Tomé 3854, Capital Federal (Suc. central)</p>
+                    <p class="titulo-parrafo">Contacto</p>
+                    <p class="parrafo-footer">1111 1111</p>
+                    <p class="parrafo-footer">comercial@heladeriastorni.com</p>
+                    <p class="parrafo-footer">Santo Tomé 3854, Capital Federal (Suc. central)</p>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="footerText border-top">
+            <div class="footer-text border-top">
                 <ul class="list-inline mr-auto">
                     <li class="list-inline-item"><a href="#"><i class="bi bi-instagram"></i></a></li>
                     <li class="list-inline-item"><a href="#"><i class="bi bi-facebook"></i></a></li>
