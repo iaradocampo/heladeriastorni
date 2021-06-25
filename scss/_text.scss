@@ -1,0 +1,171 @@
+$color-font: #812a71;
+$lighter-violet: rgb(244, 234, 249);
+$light-violet: rgb(225, 196, 239);
+$size-one: 1.6em;
+$size-two: 2em;
+$font-black: rgb(0, 0, 0);
+$font-white: rgb(255, 255, 255);
+
+body {
+    font-family: 'Questrial', sans-serif;
+    background-color: $lighter-violet;
+}
+
+.title {
+    font-size: $size-two;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 1.3rem;
+}
+
+.subtitle {
+    font-size: $size-two;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.parrafo {
+    font-size: 1em;
+    color: $font-black;
+}
+
+.subtitulo-box {
+    font-size: $size-two;
+    text-transform: uppercase;
+    color: $color-font;
+    padding-top: 0.4rem;
+}
+
+.carousel-title {
+    font-size: 1.2em;
+    color: $font-black;
+    margin-bottom: 0;
+}
+
+.carousel-parrafo {
+    font-size: 1em;
+    text-align: left;
+    color: $font-black;
+    margin-top: 0.7em;
+}
+
+.image-text {
+    font-size: 3em;
+    font-family: 'Playfair Display', serif;
+    color: $font-white;
+
+    &:hover {
+        color: $font-white;
+        text-decoration: none;
+    }
+}
+
+.title-center {
+    font-size: $size-one;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.subtitle-center {
+    font-size: $size-one;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    text-align: center;
+}
+
+.title-left {
+    font-size: $size-one;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.titulo {
+    font-size: 3em;
+    color: $font-black;
+    font-family: 'Playfair Display', serif;
+}
+
+.banner-titulo {
+    padding: 6rem 9rem 0 0;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: $font-white;
+    letter-spacing: 0.5em;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 25rem;
+        height: 0.1rem;
+        background-color: $light-violet;
+        margin-top: 3rem;
+        right: 10rem;
+    }
+}
+
+#banner-titulo {
+    padding-top: 6rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: $font-white;
+    letter-spacing: 0.5em;
+    text-align: right;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 30rem;
+        height: 0.1rem;
+        background-color: $light-violet;
+        margin-top: 3rem;
+        right: 25rem;
+    }
+}
+
+.banner-parrafo {
+    padding: 3rem 9rem 0 0;
+    font-size: 3.5em;
+    color: $font-white;
+}
+#banner-parrafo{
+    padding-top: 3rem;
+    font-size: 4em;
+    color: $font-white;
+    text-align: right;
+}
+.titulo-catering{
+    font-size: $size-one;
+    color: $font-white;
+    text-align: left;
+}
+.parrafo-catering{
+    color: $font-white;
+    text-align: left;
+    font-size: 1em;
+}
+
+.btnText {
+    font-size: 1.2em;
+    padding-top: 0.5rem;
+    color: $font-white;
+}
+
+.border-left {
+    border-left: 2px solid #8c65a1 !important;
+}
+
+.title-big {
+    font-size: 3em;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+    margin-bottom: 1.6rem;
+}

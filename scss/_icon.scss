@@ -1,0 +1,48 @@
+.carousel-indicators {
+    li {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-left: 10px;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 1%;
+    height: 1%;
+    padding-top: 150px;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+.bi-star-fill {
+    font-size: 0.8em;
+}
+.bi-truck{
+    font-size: 4em;
+    color: $font-white !important;
+}
+
+.list-inline-item {
+    font-size: 1.1em;
+    padding-left: 8px;
+    padding-top: 20px;
+}
+
+.bi {
+    color: $color-font;
+}
+.btn {
+    width: 14rem;
+    height: 3.5rem;
+    margin: 1rem 9rem 0 0;
+    background-color: violet;
+    border-color: violet;
+    box-shadow: none !important;
+    border-radius: 0;
+
+    &:hover {
+        background-color: violet;
+    }
+}

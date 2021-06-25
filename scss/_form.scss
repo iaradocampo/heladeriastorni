@@ -1,0 +1,69 @@
+@mixin button ($bgcolor) {
+    background-color: $bgcolor;
+    outline: none;
+    border: 0;
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    width: 100%;
+    height: 70%;
+    text-transform: uppercase;
+    margin-top: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+form {
+    width: 500px;
+    margin-top: 20px;
+}
+
+fieldset {
+    border-color: transparent;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 25px;
+
+    label {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        font-size: 20px;
+        color: $font-black;
+        pointer-events: none;
+        transition: all 0.5s ease-in-out;
+    }
+
+    input {
+        border: 0;
+        border-bottom: 1px solid black;
+        background: transparent;
+        width: 100%;
+        padding: 50px 0 5px 0;
+        font-size: 1.1em;
+        color: $font-black;
+
+        &:focus {
+            border: none;
+            outline: none;
+            border-bottom: 1px solid #84589b;
+        }
+    }
+}
+
+.btn-enviar {
+    @include button(#8c65a1);
+}
+
+.btn-eliminar {
+    @include button(#4b255e);
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -18px;
+    font-size: 1em;
+
+}
