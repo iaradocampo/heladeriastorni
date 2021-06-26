@@ -63,6 +63,12 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .image-text {
+        font-size: 1.4em;
+    }
+}
+
 .title-center {
     font-size: $size-one;
     color: $color-font;
@@ -111,6 +117,28 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .banner-titulo {
+        padding: 2rem 3rem 0 0;
+
+        &::after {
+            right: 4rem;
+        }
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .banner-titulo {
+        font-size: 0.8em;
+        padding: 0.8rem 1rem 0 0;
+
+        &::after {
+            right: 2rem;
+            width: 15rem;
+        }
+    }
+}
+
 #banner-titulo {
     padding-top: 6rem;
     font-size: 0.8em;
@@ -130,23 +158,52 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    #banner-titulo::after {
+        right: 2.8rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    #banner-titulo::after {
+        width: 15rem;
+        right: 1.1rem;
+    }
+}
+
 .banner-parrafo {
     padding: 3rem 9rem 0 0;
     font-size: 3.5em;
     color: $font-white;
 }
-#banner-parrafo{
+
+@media (max-width: 768px) {
+    .banner-parrafo {
+        padding: 1rem 3rem 0 0;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .banner-parrafo {
+        font-size: 2.5em;
+        padding: 1rem 1rem 0 0;
+    }
+}
+
+#banner-parrafo {
     padding-top: 3rem;
     font-size: 4em;
     color: $font-white;
     text-align: right;
 }
-.titulo-catering{
+
+.titulo-catering {
     font-size: $size-one;
     color: $font-white;
     text-align: left;
 }
-.parrafo-catering{
+
+.parrafo-catering {
     color: $font-white;
     text-align: left;
     font-size: 1em;
@@ -160,6 +217,12 @@ body {
 
 .border-left {
     border-left: 2px solid #8c65a1 !important;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .border-left {
+        border-left: none !important;
+    }
 }
 
 .title-big {

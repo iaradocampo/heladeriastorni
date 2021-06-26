@@ -18,20 +18,46 @@ locales {
     }
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+
+    .cafeteria-icon,
+    .hoteles-icon,
+    .historia-icon,
+    .locales-icon {
+        min-height: 34rem;
+    }
+}
+
 #img1 {
     width: 100vw;
-    min-height: 700px;
+    min-height: 500px;
     max-height: 700px;
     object-fit: cover;
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    #img1 {
+        height: 500px;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
 #img2 {
     width: 100vw;
-    min-height: 700px;
+    min-height: 500px;
     max-height: 700px;
     object-fit: cover;
     margin: auto;
+}
+
+@media (max-width: 768px) {
+    #img2 {
+        height: 500px;
+        object-fit: cover;
+        margin: auto;
+    }
 }
 
 .item {
@@ -55,6 +81,16 @@ locales {
     height: 100%;
 }
 
+@media (max-width: 768px) {
+
+    .cafeteria,
+    .hotel,
+    .catering {
+        width: 400px;
+        height: 700px;
+    }
+}
+
 .productos {
     width: 450px;
     height: 700px;
@@ -62,11 +98,40 @@ locales {
     margin: auto;
 }
 
+@media (max-width: 768px) {
+    .productos {
+        width: 500px;
+        height: 350px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .productos {
+        display: none;
+    }
+}
+
 .img-animation {
     width: 32rem;
     height: 22rem;
     overflow: hidden;
     transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+    .img-animation {
+        margin-left: 6rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .img-animation {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+    }
 }
 
 .helado-animation {

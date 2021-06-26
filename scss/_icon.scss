@@ -16,10 +16,29 @@
     margin-right: -30px;
 }
 
+@media (max-width: 768px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        padding-top: 200px;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 150px;
+    }
+}
+
 .bi-star-fill {
     font-size: 0.8em;
 }
-.bi-truck{
+
+.bi-truck {
     font-size: 4em;
     color: $font-white !important;
 }
@@ -30,9 +49,16 @@
     padding-top: 20px;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+    .list-inline {
+        margin: auto;
+    }
+}
+
 .bi {
     color: $color-font;
 }
+
 .btn {
     width: 14rem;
     height: 3.5rem;
@@ -44,5 +70,19 @@
 
     &:hover {
         background-color: violet;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn {
+        margin-left: 0;
+        margin-right: 3rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .btn {
+        margin-left: 0;
+        margin-right: 0;
     }
 }

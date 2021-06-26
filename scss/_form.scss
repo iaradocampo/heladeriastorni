@@ -17,6 +17,12 @@ form {
     width: 500px;
     margin-top: 20px;
 }
+@media (max-width: 768px) and (min-width: 320px){
+    form {
+        width: 100%;
+        height: auto;
+    }
+}
 
 fieldset {
     border-color: transparent;
@@ -56,9 +62,19 @@ fieldset {
 .btn-enviar {
     @include button(#8c65a1);
 }
+@media (max-width: 768px) and (min-width: 320px){
+    .btn-enviar{
+        font-size: 10px;
+    }
+}
 
 .btn-eliminar {
     @include button(#4b255e);
+}
+@media (max-width: 768px) and (min-width: 320px){
+    .btn-eliminar{
+        font-size: 10px;
+    }
 }
 
 .input-container input:focus~label,
