@@ -5,5 +5,5 @@ El siguiente repositorio es con fines educativos y forma parte de mi proyecto fi
 
 Heladería Storni es una marca de helados artesanales fictia. El contenido disponible del sitio es original y posee derechos reservados. 
 
-Hosting gratuito:
+Hosting:
 https://heladeriastorni.vercel.app/
