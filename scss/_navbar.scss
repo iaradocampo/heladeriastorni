@@ -1,6 +1,7 @@
 $strong-violet: #851370;
 $hover: rgb(132, 88, 155);
 
+/*navbar que se mantiene en todas las secciones del sitio*/
 nav {
     background-color: rgb(239, 223, 248);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
@@ -11,6 +12,7 @@ nav {
     }
 }
 
+/*links que dirigen a las secciones del sitio*/
 .nav-link {
     position: relative;
 
@@ -45,11 +47,13 @@ nav {
     }
 }
 
+/*logo home*/
 .logo-brand {
     min-width: 120px;
     max-width: 140px;
 }
 
+/*navbar responsive*/
 .navbar-toggler {
     font-size: 2.5rem;
 
@@ -58,6 +62,7 @@ nav {
     }
 }
 
+/*menu desplegable*/
 .dropdown:hover .dropdown-menu {
     display: block;
 }

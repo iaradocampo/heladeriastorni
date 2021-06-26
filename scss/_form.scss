@@ -13,11 +13,13 @@
     position: relative;
 }
 
+/*el siguiente formulario pertence a contacto.html*/
 form {
     width: 500px;
     margin-top: 20px;
 }
-@media (max-width: 768px) and (min-width: 320px){
+
+@media (max-width: 768px) and (min-width: 320px) {
     form {
         width: 100%;
         height: auto;
@@ -58,12 +60,13 @@ fieldset {
         }
     }
 }
-
+/*botones*/
 .btn-enviar {
     @include button(#8c65a1);
 }
-@media (max-width: 768px) and (min-width: 320px){
-    .btn-enviar{
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .btn-enviar {
         font-size: 10px;
     }
 }
@@ -71,12 +74,13 @@ fieldset {
 .btn-eliminar {
     @include button(#4b255e);
 }
-@media (max-width: 768px) and (min-width: 320px){
-    .btn-eliminar{
+
+@media (max-width: 768px) and (min-width: 320px) {
+    .btn-eliminar {
         font-size: 10px;
     }
 }
-
+/*pertenece a texto*/
 .input-container input:focus~label,
 .input-container input:valid~label {
     top: -18px;

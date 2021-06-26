@@ -1,6 +1,7 @@
 $light-violet: rgb(225, 196, 239);
 $lighter-violet: rgb(244, 234, 249);
 
+/*pertenece a footer de todas las secciones*/
 footer {
     background-color: $light-violet;
     width: 100%;
@@ -8,6 +9,7 @@ footer {
     text-align: center;
 }
 
+/*formulario dentro de footer*/
 .form {
     width: 100%;
 }
@@ -23,24 +25,14 @@ footer {
         box-shadow: none;
     }
 }
-@media (min-width: 360px) and (max-width: 414px){
-    .form-control{
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .form-control {
         margin-bottom: 10px;
     }
 }
 
-.footer-text {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 30px;
-}
-@media (min-width: 360px) and (max-width: 414px){
-    .footer-text {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
-
+/*boton formulario*/
 .button {
     background-color: #8c65a1;
     outline: none;
@@ -59,13 +51,15 @@ footer {
         transition: all 0.4s;
     }
 }
-@media (min-width: 360px) and (max-width: 414px){
+
+@media (min-width: 360px) and (max-width: 414px) {
     .button {
         top: 0;
         padding: 6px 16px;
     }
 }
 
+/*texto*/
 .title-footer {
     display: flex;
     justify-content: center;
@@ -95,23 +89,53 @@ footer {
     }
 }
 
+/*listas con vículos que redirigen a otras secciones*/
 .li-footer {
     text-align: left;
     padding-bottom: 17px;
 }
 
+/*línea de separación*/
 .border-top {
     border-top: 2px solid #8c65a1 !important;
     margin-top: 70px;
 }
 
+/*box para texto e icons*/
+.footer-text {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .footer-text {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.list-inline-item {
+    font-size: 1.1em;
+    padding-left: 8px;
+    padding-top: 20px;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .list-inline {
+        margin: auto;
+    }
+}
+
+/*texto de derechos reservados*/
 small {
     font-size: 0.9em;
     color: $font-black;
     padding-right: 8px;
     padding-top: 20px;
 }
-@media (min-width: 360px) and (max-width: 414px){
+
+@media (min-width: 360px) and (max-width: 414px) {
     small {
         margin-bottom: 2rem;
     }

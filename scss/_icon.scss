@@ -1,3 +1,4 @@
+/*pertence a index.html*/
 .carousel-indicators {
     li {
         height: 15px;
@@ -38,27 +39,18 @@
     font-size: 0.8em;
 }
 
+/*pertence a catering.htl*/
 .bi-truck {
     font-size: 4em;
     color: $font-white !important;
 }
 
-.list-inline-item {
-    font-size: 1.1em;
-    padding-left: 8px;
-    padding-top: 20px;
-}
-
-@media (min-width: 360px) and (max-width: 414px) {
-    .list-inline {
-        margin: auto;
-    }
-}
-
+/*icon general*/
 .bi {
     color: $color-font;
 }
 
+/*pertence a cafeteria.html, hoteles.html, catering.html*/
 .btn {
     width: 14rem;
     height: 3.5rem;

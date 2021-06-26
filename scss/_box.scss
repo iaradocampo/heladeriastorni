@@ -1,9 +1,34 @@
+/*pertenece a index.html, productos.html, cafeteria.html, hoteles.html, catering.html, contacto.html*/
 .main {
     padding-top: 3rem;
 }
 
+/*pertenece a index.html, cafeteria.html, historia.html, hoteles.html, catering.html*/
 .description {
     margin-top: 7rem;
+}
+
+/*pertence a index.html*/
+.img-index {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid white;
+}
+
+@media (max-width: 768px) {
+    .img-box {
+        height: 70%;
+    }
 }
 
 .boxes {
@@ -82,12 +107,7 @@
     }
 }
 
-
-.contacto {
-    width: 100%;
-    min-height: 55rem;
-}
-
+/*pertenece a productos.html*/
 .images {
     width: 100%;
     height: 100%;
@@ -149,11 +169,7 @@
     }
 }
 
-.info-contacto {
-    margin-top: 13rem;
-    margin-left: 10rem
-}
-
+/*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .box-banner {
     display: flex;
     justify-content: flex-end;
@@ -186,11 +202,44 @@
     }
 }
 
+/*pertence a catering.html*/
+.btn-catering {
+    text-align: right;
+}
+
+/*pertence a historia.html*/
 .main-historia {
     width: 100%;
     height: auto;
     padding-top: 4rem;
     margin-bottom: 4rem;
+}
+
+/*pertence a locales.html*/
+.mapa {
+    margin: 6rem 0 6rem 0;
+}
+
+iframe {
+    margin-top: 2.5rem;
+}
+
+@media (max-width: 768px) and (min-width: 320px) {
+    iframe {
+        width: 100%;
+        height: 19rem;
+    }
+}
+
+/*pertenece a contacto.html*/
+.contacto {
+    width: 100%;
+    min-height: 55rem;
+}
+
+.info-contacto {
+    margin-top: 13rem;
+    margin-left: 10rem
 }
 
 .franquicia {
@@ -211,51 +260,11 @@
     position: relative;
 }
 
+/*un espacio que se utiliza en varias secciones del sitio*/
 .space {
     margin-bottom: 5rem;
 }
 
 .space-section {
     padding-top: 2.5rem;
-}
-
-.mapa {
-    margin: 6rem 0 6rem 0;
-}
-
-iframe {
-    margin-top: 2.5rem;
-}
-
-@media (max-width: 768px) and (min-width: 320px) {
-    iframe {
-        width: 100%;
-        height: 19rem;
-    }
-}
-
-.btn-catering {
-    text-align: right;
-}
-
-.img-index {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-box {
-    width: 100%;
-    height: 80%;
-    position: relative;
-    overflow: hidden;
-    border-right: 1px solid white;
-}
-
-@media (max-width: 768px) {
-    .img-box {
-        height: 70%;
-    }
 }

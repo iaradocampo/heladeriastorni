@@ -1,3 +1,5 @@
+@charset "UTF-8";
+/*navbar que se mantiene en todas las secciones del sitio*/
 nav {
   background-color: #efdff8;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
@@ -5,6 +7,7 @@ nav {
   nav li {
     padding: 1.8rem 1.6rem; }
 
+/*links que dirigen a las secciones del sitio*/
 .nav-link {
   position: relative; }
   .nav-link:before {
@@ -31,15 +34,18 @@ nav {
     text-decoration: none;
     transition: all 0.4s; }
 
+/*logo home*/
 .logo-brand {
   min-width: 120px;
   max-width: 140px; }
 
+/*navbar responsive*/
 .navbar-toggler {
   font-size: 2.5rem; }
   .navbar-toggler:focus {
     outline: none; }
 
+/*menu desplegable*/
 .dropdown:hover .dropdown-menu {
   display: block; }
 
@@ -59,10 +65,12 @@ nav {
     background: rgba(224, 195, 238, 0.623);
     color: #84589b; }
 
+/*pertenece al body de todo el sitio*/
 body {
   font-family: 'Questrial', sans-serif;
   background-color: #f4eaf9; }
 
+/*pertene a index.html, productos.html, cafeteria.html, hoteles.html, locales.html, contacto.html*/
 .title {
   font-size: 2em;
   color: #812a71;
@@ -70,6 +78,7 @@ body {
   text-align: center;
   margin-bottom: 1.3rem; }
 
+/*pertenece a index.html, historia.html, contacto.html*/
 .subtitle {
   font-size: 2em;
   color: #812a71;
@@ -77,16 +86,33 @@ body {
   font-style: italic;
   text-align: center; }
 
+/*pertence a index.html*/
+.text-box {
+  font-size: 2.5em;
+  font-family: 'Playfair Display', serif;
+  color: white;
+  text-align: center; }
+  .text-box:hover {
+    color: white;
+    text-decoration: none; }
+
+@media (max-width: 768px) {
+  .text-box {
+    font-size: 2em; } }
+
+/*pertenece a todos los p del sitio*/
 .parrafo {
   font-size: 1em;
   color: black; }
 
+/*pertenece a index.html*/
 .subtitulo-box {
   font-size: 2em;
   text-transform: uppercase;
   color: #812a71;
   padding-top: 0.4rem; }
 
+/*pertenece a slider comentarios en index.html*/
 .carousel-title {
   font-size: 1.2em;
   color: black;
@@ -98,6 +124,7 @@ body {
   color: black;
   margin-top: 0.7em; }
 
+/*pertenece a productos.html*/
 .image-text {
   font-size: 3em;
   font-family: 'Playfair Display', serif;
@@ -110,19 +137,20 @@ body {
   .image-text {
     font-size: 1.4em; } }
 
-.title-center {
-  font-size: 1.6em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  text-align: center;
-  margin-bottom: 1rem; }
-
 .subtitle-center {
   font-size: 1.6em;
   color: #812a71;
   font-family: 'Playfair Display', serif;
   font-style: italic;
   text-align: center; }
+
+/*pertenece a productos.html, cafeteria.html, hoteles.html, catering.html*/
+.title-center {
+  font-size: 1.6em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  margin-bottom: 1rem; }
 
 .title-left {
   font-size: 1.6em;
@@ -131,11 +159,7 @@ body {
   text-align: left;
   margin-bottom: 1rem; }
 
-.titulo {
-  font-size: 3em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif; }
-
+/*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .banner-titulo {
   padding: 6rem 9rem 0 0;
   font-size: 0.8em;
@@ -210,6 +234,20 @@ body {
   color: white;
   text-align: right; }
 
+/*pertenece a cafeteria.html, hoteles.html, catering.html*/
+.btnText {
+  font-size: 1.2em;
+  padding-top: 0.5rem;
+  color: white; }
+
+.title-big {
+  font-size: 3em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif;
+  text-align: left;
+  margin-bottom: 1.6rem; }
+
+/*pertenece a catering.html*/
 .titulo-catering {
   font-size: 1.6em;
   color: white;
@@ -220,11 +258,13 @@ body {
   text-align: left;
   font-size: 1em; }
 
-.btnText {
-  font-size: 1.2em;
-  padding-top: 0.5rem;
-  color: white; }
+/*pertenece a historia.html, contacto.html*/
+.titulo {
+  font-size: 3em;
+  color: #812a71;
+  font-family: 'Playfair Display', serif; }
 
+/*pertenece a historia.html*/
 .border-left {
   border-left: 2px solid #8c65a1 !important; }
 
@@ -232,40 +272,32 @@ body {
   .border-left {
     border-left: none !important; } }
 
-.title-big {
-  font-size: 3em;
-  color: #812a71;
-  font-family: 'Playfair Display', serif;
-  text-align: left;
-  margin-bottom: 1.6rem; }
-
-.text-box {
-  font-size: 2.5em;
-  font-family: 'Playfair Display', serif;
-  color: white;
-  text-align: center; }
-  .text-box:hover {
-    color: white;
-    text-decoration: none; }
-
-@media (max-width: 768px) {
-  .text-box {
-    font-size: 2em; } }
-
-.a {
-  display: none; }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .a {
-    color: black; }
-    .a:hover {
-      text-decoration: none; } }
-
+/*pertenece a index.html, productos.html, cafeteria.html, hoteles.html, catering.html, contacto.html*/
 .main {
   padding-top: 3rem; }
 
+/*pertenece a index.html, cafeteria.html, historia.html, hoteles.html, catering.html*/
 .description {
   margin-top: 7rem; }
+
+/*pertence a index.html*/
+.img-index {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.img-box {
+  width: 100%;
+  height: 80%;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid white; }
+
+@media (max-width: 768px) {
+  .img-box {
+    height: 70%; } }
 
 .boxes {
   height: 32rem;
@@ -328,10 +360,7 @@ body {
   .hide {
     display: none; } }
 
-.contacto {
-  width: 100%;
-  min-height: 55rem; }
-
+/*pertenece a productos.html*/
 .images {
   width: 100%;
   height: 100%;
@@ -381,10 +410,7 @@ body {
     transform: scale(1.1);
     background: rgba(0, 0, 0, 0.7); }
 
-.info-contacto {
-  margin-top: 13rem;
-  margin-left: 10rem; }
-
+/*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .box-banner {
   display: flex;
   justify-content: flex-end;
@@ -410,11 +436,37 @@ body {
     width: 70%;
     margin-top: 4rem; } }
 
+/*pertence a catering.html*/
+.btn-catering {
+  text-align: right; }
+
+/*pertence a historia.html*/
 .main-historia {
   width: 100%;
   height: auto;
   padding-top: 4rem;
   margin-bottom: 4rem; }
+
+/*pertence a locales.html*/
+.mapa {
+  margin: 6rem 0 6rem 0; }
+
+iframe {
+  margin-top: 2.5rem; }
+
+@media (max-width: 768px) and (min-width: 320px) {
+  iframe {
+    width: 100%;
+    height: 19rem; } }
+
+/*pertenece a contacto.html*/
+.contacto {
+  width: 100%;
+  min-height: 55rem; }
+
+.info-contacto {
+  margin-top: 13rem;
+  margin-left: 10rem; }
 
 .franquicia {
   display: flex;
@@ -431,44 +483,14 @@ body {
   display: inline-block;
   position: relative; }
 
+/*un espacio que se utiliza en varias secciones del sitio*/
 .space {
   margin-bottom: 5rem; }
 
 .space-section {
   padding-top: 2.5rem; }
 
-.mapa {
-  margin: 6rem 0 6rem 0; }
-
-iframe {
-  margin-top: 2.5rem; }
-
-@media (max-width: 768px) and (min-width: 320px) {
-  iframe {
-    width: 100%;
-    height: 19rem; } }
-
-.btn-catering {
-  text-align: right; }
-
-.img-index {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.img-box {
-  width: 100%;
-  height: 80%;
-  position: relative;
-  overflow: hidden;
-  border-right: 1px solid white; }
-
-@media (max-width: 768px) {
-  .img-box {
-    height: 70%; } }
-
+/*pertence a index.html*/
 .carousel-indicators li {
   height: 15px;
   width: 15px;
@@ -498,22 +520,16 @@ iframe {
 .bi-star-fill {
   font-size: 0.8em; }
 
+/*pertence a catering.htl*/
 .bi-truck {
   font-size: 4em;
   color: white !important; }
 
-.list-inline-item {
-  font-size: 1.1em;
-  padding-left: 8px;
-  padding-top: 20px; }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .list-inline {
-    margin: auto; } }
-
+/*icon general*/
 .bi {
   color: #812a71; }
 
+/*pertence a cafeteria.html, hoteles.html, catering.html*/
 .btn {
   width: 14rem;
   height: 3.5rem;
@@ -535,6 +551,7 @@ iframe {
     margin-left: 0;
     margin-right: 0; } }
 
+/*pertence a cateria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .cafeteria-icon {
   background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/cafeteria.jpeg");
   background-size: cover;
@@ -572,6 +589,7 @@ iframe {
   .locales-icon {
     min-height: 34rem; } }
 
+/*pertenece a slider index.html*/
 #img1 {
   width: 100vw;
   min-height: 500px;
@@ -609,19 +627,7 @@ iframe {
     position: absolute;
     background: linear-gradient(rgba(12, 12, 12, 0.4), rgba(12, 12, 12, 0.4)); }
 
-.cafeteria,
-.hotel,
-.catering {
-  width: 100%;
-  height: 100%; }
-
-@media (max-width: 768px) {
-  .cafeteria,
-  .hotel,
-  .catering {
-    width: 400px;
-    height: 700px; } }
-
+/*pertenece a productos.html*/
 .productos {
   width: 450px;
   height: 700px;
@@ -640,29 +646,44 @@ iframe {
     width: 100%;
     height: 100%; } }
 
-.img-animation {
+/*pertence a img cafteria.html, hotel.html, catering.html*/
+.cafeteria,
+.hotel,
+.catering {
+  width: 100%;
+  height: 100%; }
+
+@media (max-width: 768px) {
+  .cafeteria,
+  .hotel,
+  .catering {
+    width: 400px;
+    height: 700px; } }
+
+.img-transition {
   width: 32rem;
   height: 22rem;
   overflow: hidden;
   transition: all 0.5s ease; }
 
 @media (max-width: 768px) {
-  .img-animation {
+  .img-transition {
     margin-left: 6rem; } }
 
 @media (min-width: 360px) and (max-width: 414px) {
-  .img-animation {
+  .img-transition {
     width: 100%;
     height: 100%;
     margin-left: 0; } }
 
-.helado-animation {
+.helado-transition {
   width: 100%;
   height: 100%;
   transition: all 0.5s ease; }
-  .helado-animation:hover {
+  .helado-transition:hover {
     transform: scale(2); }
 
+/*el siguiente formulario pertence a contacto.html*/
 form {
   width: 500px;
   margin-top: 20px; }
@@ -699,6 +720,7 @@ fieldset {
       outline: none;
       border-bottom: 1px solid #84589b; }
 
+/*botones*/
 .btn-enviar {
   background-color: #8c65a1;
   outline: none;
@@ -735,17 +757,20 @@ fieldset {
   .btn-eliminar {
     font-size: 10px; } }
 
+/*pertenece a texto*/
 .input-container input:focus ~ label,
 .input-container input:valid ~ label {
   top: -18px;
   font-size: 1em; }
 
+/*pertenece a footer de todas las secciones*/
 footer {
   background-color: #e1c4ef;
   width: 100%;
   min-height: 550px;
   text-align: center; }
 
+/*formulario dentro de footer*/
 .form {
   width: 100%; }
 
@@ -762,16 +787,7 @@ footer {
   .form-control {
     margin-bottom: 10px; } }
 
-.footer-text {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 30px; }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .footer-text {
-    display: flex;
-    flex-wrap: wrap; } }
-
+/*boton formulario*/
 .button {
   background-color: #8c65a1;
   outline: none;
@@ -793,6 +809,7 @@ footer {
     top: 0;
     padding: 6px 16px; } }
 
+/*texto*/
 .title-footer {
   display: flex;
   justify-content: center;
@@ -817,14 +834,37 @@ footer {
     text-decoration: none;
     color: black; }
 
+/*listas con vículos que redirigen a otras secciones*/
 .li-footer {
   text-align: left;
   padding-bottom: 17px; }
 
+/*línea de separación*/
 .border-top {
   border-top: 2px solid #8c65a1 !important;
   margin-top: 70px; }
 
+/*box para texto e icons*/
+.footer-text {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px; }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .footer-text {
+    display: flex;
+    flex-wrap: wrap; } }
+
+.list-inline-item {
+  font-size: 1.1em;
+  padding-left: 8px;
+  padding-top: 20px; }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .list-inline {
+    margin: auto; } }
+
+/*texto de derechos reservados*/
 small {
   font-size: 0.9em;
   color: black;
