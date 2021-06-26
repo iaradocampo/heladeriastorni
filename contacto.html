@@ -73,18 +73,75 @@
     </header>
     <!--contenido principal de nuestra sección-->
     <main class="main">
-        <div class="contacto">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <!--título de nuestra sección-->
+                    <h1 class="titulo">Contacto</h1>
+                    <!--acá va formulario de contacto-->
+                    <form>
+                        <fieldset>
+                            <div class="input-container">
+                                <input type="name" required="" />
+                                <label>Nombre</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="mail" required="" />
+                                <label>Mail</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="telefono" required="" />
+                                <label>Teléfono</label>
+                            </div>
+                            <div class="input-container">
+                                <input type="tu consulta" required="" />
+                                <label>Tu consulta</label>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <button type="submit" class="btn-enviar">enviar</button>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <button type="reset" class="btn-eliminar">eliminar</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="info-contacto">
+                        <p class="parrafo-contacto">Fábrica</p>
+                        <p class="parrafo">Santo Tomé 3854, Capital Federal</p>
+                        <div class="space-section">
+                            <p class="parrafo-contacto">Datos de contacto</p>
+                        </div>
+                        <p class="parrafo">comercial@heladeriastorni.com</p>
+                        <p class="parrafo">Tel: (54 11) 1111-1111</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="description">
+        <div class="space">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12">
-                        <!--título de nuestra sección-->
-                        <h1 class="titulo">Contacto</h1>
-                        <!--acá va formulario de contacto-->
-                        <form>
+                <div class="franquicia">
+                    <div class="franquicia-box">
+                        <div class="franquicia-text">
+                            <h2 class="title">¡Abrí tu franquicia!</h2>
+                            <p class="subtitle">¿Querés formar parte de la familia Storni?</p>
+                        </div>
+                        <div class="center">
+                            <p class="parrafo">¡Llena el siguiente formulario y nos estaremos comunicando con vos para
+                                contarte
+                                más!
+                            </p>
+                        </div>
+                        <form class="ml-auto">
                             <fieldset>
                                 <div class="input-container">
                                     <input type="name" required="" />
-                                    <label>Nombre</label>
+                                    <label>Nombre y Apellido</label>
                                 </div>
                                 <div class="input-container">
                                     <input type="mail" required="" />
@@ -92,11 +149,15 @@
                                 </div>
                                 <div class="input-container">
                                     <input type="telefono" required="" />
-                                    <label>Teléfono</label>
+                                    <label>Localización</label>
+                                </div>
+                                <div class="input-container">
+                                    <input type="telefono" required="" />
+                                    <label>Número de contacto</label>
                                 </div>
                                 <div class="input-container">
                                     <input type="tu consulta" required="" />
-                                    <label>Tu consulta</label>
+                                    <label>Comentario</label>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6 col-md-6 col-sm-12">
@@ -109,61 +170,6 @@
                             </fieldset>
                         </form>
                     </div>
-                    <div class="col-lg-6 col-md-12">
-                        <div class="info-contacto">
-                            <p class="parrafo">Información de contacto</p>
-                            <p class="parrafo">Heladería Storni.</p>
-                            <p class="parrafo">Santo Tomé 3854, Capital Federal (Suc. central)</p>
-                            <p class="parrafo">Tel: (54 11) 1111-1111</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="contacto">
-        <div class="container">
-            <div class="franquicia">
-                <div class="franquicia-box">
-                    <div class="franquicia-text">
-                        <h2 class="title">¡Abrí tu franquicia!</h2>
-                        <p class="subtitle">¿Querés formar parte de la familia Storni?</p>
-                    </div>
-                    <p class="parrafo">¡Llena el siguiente formulario y nos estaremos comunicando con vos para contarte
-                        más!
-                    </p>
-                    <form class="ml-auto">
-                        <fieldset>
-                            <div class="input-container">
-                                <input type="name" required="" />
-                                <label>Nombre y Apellido</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="mail" required="" />
-                                <label>Mail</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="telefono" required="" />
-                                <label>Localización</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="telefono" required="" />
-                                <label>Número de contacto</label>
-                            </div>
-                            <div class="input-container">
-                                <input type="tu consulta" required="" />
-                                <label>Comentario</label>
-                            </div>
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <button type="submit" class="btn-enviar">enviar</button>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12">
-                                    <button type="reset" class="btn-eliminar">eliminar</button>
-                                </div>
-                            </div>
-                        </fieldset>
-                    </form>
                 </div>
             </div>
         </div>
