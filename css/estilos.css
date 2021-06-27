@@ -563,31 +563,31 @@ iframe {
 
 /*pertence a cateria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .cafeteria-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/cafeteria.jpeg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/cafeteria.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
 .hoteles-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/hoteles.jpeg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/hoteles.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
 .catering-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/catering.jpeg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/catering.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
 .historia-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/historia.jpeg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/historia.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
 
 .locales-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("/img/locales.jpeg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/locales.jpeg");
   background-size: cover;
   width: 100%;
   min-height: 44rem; }
