@@ -148,3 +148,24 @@ locales {
         transform: scale(2);
     }
 }
+
+/*pertenece a historia.html*/
+.historia {
+    width: 500px;
+    height: 600px;
+    margin-left: 40px;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .historia {
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+        padding-bottom: 5rem;
+    }
+
+    #historia {
+        width: 100%;
+        height: 100%;
+    }
+}

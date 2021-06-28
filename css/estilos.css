@@ -272,6 +272,17 @@ body {
   .border-left {
     border-left: none !important; } }
 
+hr {
+  display: none; }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  hr {
+    display: block;
+    border-top: 2px solid #812a71;
+    height: 100%;
+    width: 80%;
+    margin-bottom: 3rem; } }
+
 /*pertenece a contacto.hmtl*/
 .parrafo-contacto {
   font-size: 1.2em;
@@ -452,6 +463,10 @@ body {
   padding-top: 4rem;
   margin-bottom: 4rem; }
 
+@media (min-width: 360px) and (max-width: 414px) {
+  #description {
+    margin-top: 0; } }
+
 /*pertenece a locales.html*/
 .mapa {
   margin: 6rem 0 6rem 0; }
@@ -493,7 +508,7 @@ iframe {
   .center {
     text-align: center; } }
 
-/*un espacio que se utiliza en varias secciones del sitio*/
+/*espacio que se utiliza en varias secciones del sitio*/
 .space {
   margin-bottom: 5rem; }
 
@@ -692,6 +707,22 @@ iframe {
   transition: all 0.5s ease; }
   .helado-transition:hover {
     transform: scale(2); }
+
+/*pertenece a historia.html*/
+.historia {
+  width: 500px;
+  height: 600px;
+  margin-left: 40px; }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .historia {
+    width: 100%;
+    height: 100%;
+    margin-left: 0;
+    padding-bottom: 5rem; }
+  #historia {
+    width: 100%;
+    height: 100%; } }
 
 /*el siguiente formulario pertence a contacto.html*/
 form {

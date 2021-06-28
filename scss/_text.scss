@@ -264,8 +264,23 @@ body {
         border-left: none !important;
     }
 }
+
+hr {
+    display: none;
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    hr {
+        display: block;
+        border-top: 2px solid $color-font;
+        height: 100%;
+        width: 80%;
+        margin-bottom: 3rem;
+    }
+}
+
 /*pertenece a contacto.hmtl*/
-.parrafo-contacto{
+.parrafo-contacto {
     font-size: 1.2em;
     color: $color-font;
 }

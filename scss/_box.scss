@@ -215,6 +215,12 @@
     margin-bottom: 4rem;
 }
 
+@media (min-width: 360px) and (max-width: 414px) {
+    #description {
+        margin-top: 0;
+    }
+}
+
 /*pertenece a locales.html*/
 .mapa {
     margin: 6rem 0 6rem 0;
@@ -261,13 +267,14 @@ iframe {
     display: inline-block;
     position: relative;
 }
-@media (min-width: 360px) and (max-width: 414px){
-    .center{
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .center {
         text-align: center;
     }
 }
 
-/*un espacio que se utiliza en varias secciones del sitio*/
+/*espacio que se utiliza en varias secciones del sitio*/
 .space {
     margin-bottom: 5rem;
 }
