@@ -230,7 +230,28 @@
 
 /*pertence a catering.html*/
 .btn-catering {
-    text-align: right;
+    margin-left: 55rem;
+}
+
+@media (max-width: 1024px) {
+    .btn-catering {
+        margin-left: 44rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .btn-catering {
+        margin-left: 28rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .btn-catering {
+        margin-left: 0;
+        padding-bottom: 2rem;
+    }
 }
 
 /*pertence a historia.html*/
@@ -291,6 +312,30 @@ iframe {
     .info-contacto {
         margin-top: 5rem;
         margin-left: 0;
+    }
+}
+
+.franquicia-info {
+    margin-top: 15rem;
+}
+
+@media (max-width: 1024px) {
+    .franquicia-info {
+        width: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    .franquicia-info {
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .franquicia-info {
+        margin-top: 0;
+        margin-bottom: 5rem;
     }
 }
 

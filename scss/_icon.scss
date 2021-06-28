@@ -52,6 +52,18 @@ ion-icon {
     color: $font-white !important;
 }
 
+@media (max-width: 768px) {
+    .bi-truck {
+        margin-right: 15rem;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .bi-truck {
+        margin-left: 7rem;
+    }
+}
+
 /*icon general*/
 .bi {
     color: $color-font;
@@ -69,6 +81,12 @@ ion-icon {
 
     &:hover {
         background-color: #98014D;
+    }
+}
+
+@media (max-width: 1024px) {
+    .btn {
+        margin: 0;
     }
 }
 

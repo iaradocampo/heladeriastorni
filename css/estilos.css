@@ -274,13 +274,19 @@ body {
   text-align: left;
   font-size: 1em; }
 
-/*pertenece a historia.html, contacto.html*/
+.border-right {
+  border-right: 2px solid #e1c4ef !important; }
+
+@media (max-width: 768px) {
+  .border-right {
+    border-right: none !important; } }
+
+/*pertenece a historia.html*/
 .titulo {
   font-size: 3em;
   color: #812a71;
   font-family: 'Playfair Display', serif; }
 
-/*pertenece a historia.html*/
 .border-left {
   border-left: 2px solid #8c65a1 !important; }
 
@@ -300,10 +306,19 @@ hr {
     margin-bottom: 3rem; } }
 
 /*pertenece a contacto.hmtl*/
+.titulo-white {
+  font-size: 3em;
+  color: white;
+  font-family: 'Playfair Display', serif; }
+
 .parrafo-contacto {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: white;
   font-weight: bold; }
+
+.parrafo-white {
+  font-size: 1.1em;
+  color: white; }
 
 /*pertenece a index.html, productos.html, cafeteria.html, hoteles.html, catering.html, contacto.html*/
 .main {
@@ -489,7 +504,22 @@ hr {
 
 /*pertence a catering.html*/
 .btn-catering {
-  text-align: right; }
+  margin-left: 55rem; }
+
+@media (max-width: 1024px) {
+  .btn-catering {
+    margin-left: 44rem;
+    padding-bottom: 2rem; } }
+
+@media (max-width: 768px) {
+  .btn-catering {
+    margin-left: 28rem;
+    padding-bottom: 2rem; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .btn-catering {
+    margin-left: 0;
+    padding-bottom: 2rem; } }
 
 /*pertence a historia.html*/
 .main-historia {
@@ -535,6 +565,23 @@ iframe {
   .info-contacto {
     margin-top: 5rem;
     margin-left: 0; } }
+
+.franquicia-info {
+  margin-top: 15rem; }
+
+@media (max-width: 1024px) {
+  .franquicia-info {
+    width: 85%; } }
+
+@media (max-width: 768px) {
+  .franquicia-info {
+    margin-top: 0;
+    margin-bottom: 3rem; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .franquicia-info {
+    margin-top: 0;
+    margin-bottom: 5rem; } }
 
 .franquicia {
   display: flex;
@@ -603,6 +650,14 @@ ion-icon {
   font-size: 4em;
   color: white !important; }
 
+@media (max-width: 768px) {
+  .bi-truck {
+    margin-right: 15rem; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .bi-truck {
+    margin-left: 7rem; } }
+
 /*icon general*/
 .bi {
   color: #812a71; }
@@ -618,6 +673,10 @@ ion-icon {
   border-radius: 0; }
   .btn:hover {
     background-color: #98014D; }
+
+@media (max-width: 1024px) {
+  .btn {
+    margin: 0; } }
 
 @media (max-width: 768px) {
   .btn {
@@ -772,11 +831,54 @@ ion-icon {
   .helado-transition:hover {
     transform: scale(2); }
 
+/*pertence a img en catering.html*/
+#pote {
+  width: 20%;
+  padding-top: 1.5rem;
+  text-align: center;
+  padding-bottom: 1rem; }
+
+@media (max-width: 768px) {
+  #pote {
+    width: 5rem;
+    margin-right: 15rem; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #pote {
+    margin-left: 7rem; } }
+
+#balde {
+  width: 30%;
+  padding-top: 1.5rem;
+  padding-bottom: 1.2rem; }
+
+@media (max-width: 768px) {
+  #balde {
+    width: 7rem;
+    margin-right: 15rem; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  #balde {
+    margin-left: 6rem; } }
+
 /*pertenece a historia.html*/
 .historia {
   width: 500px;
   height: 600px;
   margin-left: 40px; }
+
+@media (max-width: 1024px) {
+  .historia {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5rem; }
+  #historia {
+    width: 100%;
+    height: 100%; } }
+
+@media (max-width: 768px) {
+  .historia {
+    margin: auto; } }
 
 @media (min-width: 360px) and (max-width: 414px) {
   .historia {
@@ -790,7 +892,7 @@ ion-icon {
 
 /*pertenece a contacto.html*/
 .background-contacto {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.5), rgba(12, 12, 12, 0.5)), url(../img/bg-contacto.jpg);
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/bg-contacto.jpg);
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 5rem; }
@@ -887,7 +989,8 @@ footer {
   width: 100%; }
 
 .form-control {
-  background-color: #f4eaf9; }
+  background-color: #f4eaf9;
+  border-color: #851370; }
   .form-control:focus {
     background-color: #f4eaf9;
     border-color: #851370;

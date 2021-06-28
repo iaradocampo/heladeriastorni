@@ -270,14 +270,23 @@ body {
     font-size: 1em;
 }
 
-/*pertenece a historia.html, contacto.html*/
+.border-right {
+    border-right: 2px solid $light-violet !important;
+}
+
+@media (max-width: 768px) {
+    .border-right {
+        border-right: none !important;
+    }
+}
+
+/*pertenece a historia.html*/
 .titulo {
     font-size: 3em;
     color: $color-font;
     font-family: 'Playfair Display', serif;
 }
 
-/*pertenece a historia.html*/
 .border-left {
     border-left: 2px solid #8c65a1 !important;
 }
@@ -303,8 +312,19 @@ hr {
 }
 
 /*pertenece a contacto.hmtl*/
+.titulo-white {
+    font-size: 3em;
+    color: $font-white;
+    font-family: 'Playfair Display', serif;
+}
+
 .parrafo-contacto {
-    font-size: 1.2em;
+    font-size: 1.3em;
     color: $font-white;
     font-weight: bold;
+}
+
+.parrafo-white {
+    font-size: 1.1em;
+    color: $font-white;
 }
