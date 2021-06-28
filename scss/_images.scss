@@ -38,6 +38,14 @@ locales {
     margin: auto;
 }
 
+@media (max-width: 1024px) {
+    #img1 {
+        height: 500px;
+        object-fit: cover;
+        margin: auto;
+    }
+}
+
 @media (max-width: 768px) {
     #img1 {
         height: 500px;
@@ -52,6 +60,14 @@ locales {
     max-height: 700px;
     object-fit: cover;
     margin: auto;
+}
+
+@media (max-width: 1024px) {
+    #img2 {
+        height: 500px;
+        object-fit: cover;
+        margin: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -243,7 +259,7 @@ locales {
 
 /*pertenece a contacto.html*/
 .background-contacto {
-    background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/bg-contacto.jpg);
+    background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/bg-contacto.jpeg);
     background-size: cover;
     padding-top: 4rem;
     padding-bottom: 5rem;

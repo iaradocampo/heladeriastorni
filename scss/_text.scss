@@ -31,6 +31,24 @@ body {
 }
 
 /*pertence a index.html*/
+.slider {
+    font-size: 4em;
+    color: $font-white;
+    font-family: 'Playfair Display', serif;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .slider {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .slider {
+        font-size: 2.5em;
+    }
+}
+
 .text-box {
     font-size: 2.5em;
     font-family: 'Playfair Display', serif;

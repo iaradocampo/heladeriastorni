@@ -87,6 +87,19 @@ body {
   text-align: center; }
 
 /*pertence a index.html*/
+.slider {
+  font-size: 4em;
+  color: white;
+  font-family: 'Playfair Display', serif; }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .slider {
+    font-size: 3em; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .slider {
+    font-size: 2.5em; } }
+
 .text-box {
   font-size: 2.5em;
   font-family: 'Playfair Display', serif;
@@ -329,6 +342,35 @@ hr {
   margin-top: 7rem; }
 
 /*pertence a index.html*/
+.capa-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; }
+
+.slider-box {
+  width: 40%;
+  text-align: right;
+  padding: 10rem 10rem 0 0; }
+
+@media (max-width: 1024px) {
+  .slider-box {
+    width: 70%;
+    padding: 4rem 4rem 0 0; } }
+
+@media (max-width: 768px) {
+  .slider-box {
+    width: 70%;
+    padding: 4rem 4rem 0 0; } }
+
+@media (min-width: 360px) and (max-width: 414px) {
+  .slider-box {
+    width: 100%;
+    padding: 2rem 2rem 0 0; } }
+
 .img-index {
   width: 100%;
   height: 100%;
@@ -583,17 +625,6 @@ iframe {
     margin-top: 0;
     margin-bottom: 5rem; } }
 
-.franquicia {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%; }
-
-.franquicia-box {
-  width: 50rem;
-  height: 100%;
-  text-align: right; }
-
 .franquicia-text {
   display: inline-block;
   position: relative; }
@@ -737,6 +768,12 @@ ion-icon {
   object-fit: cover;
   margin: auto; }
 
+@media (max-width: 1024px) {
+  #img1 {
+    height: 500px;
+    object-fit: cover;
+    margin: auto; } }
+
 @media (max-width: 768px) {
   #img1 {
     height: 500px;
@@ -749,6 +786,12 @@ ion-icon {
   max-height: 700px;
   object-fit: cover;
   margin: auto; }
+
+@media (max-width: 1024px) {
+  #img2 {
+    height: 500px;
+    object-fit: cover;
+    margin: auto; } }
 
 @media (max-width: 768px) {
   #img2 {
@@ -892,7 +935,7 @@ ion-icon {
 
 /*pertenece a contacto.html*/
 .background-contacto {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/bg-contacto.jpg);
+  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url(../img/bg-contacto.jpeg);
   background-size: cover;
   padding-top: 4rem;
   padding-bottom: 5rem; }
@@ -927,8 +970,8 @@ fieldset {
     background: transparent;
     width: 100%;
     padding: 50px 0 5px 0;
-    font-size: 1.1em;
-    color: black; }
+    font-size: 1.2em;
+    color: white; }
     .input-container input:focus {
       border: none;
       outline: none;

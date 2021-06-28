@@ -50,8 +50,8 @@ fieldset {
         background: transparent;
         width: 100%;
         padding: 50px 0 5px 0;
-        font-size: 1.1em;
-        color: $font-black;
+        font-size: 1.2em;
+        color: $font-white;
 
         &:focus {
             border: none;
@@ -87,5 +87,4 @@ fieldset {
 .input-container input:valid~label {
     top: -18px;
     font-size: 1em;
-
 }

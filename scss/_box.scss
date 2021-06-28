@@ -9,6 +9,43 @@
 }
 
 /*pertence a index.html*/
+.capa-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slider-box {
+    width: 40%;
+    text-align: right;
+    padding: 10rem 10rem 0 0;
+}
+
+@media (max-width: 1024px) {
+    .slider-box {
+        width: 70%;
+        padding: 4rem 4rem 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider-box {
+        width: 70%;
+        padding: 4rem 4rem 0 0;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .slider-box {
+        width: 100%;
+        padding: 2rem 2rem 0 0;
+    }
+}
+
 .img-index {
     width: 100%;
     height: 100%;
@@ -337,19 +374,6 @@ iframe {
         margin-top: 0;
         margin-bottom: 5rem;
     }
-}
-
-.franquicia {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 100%;
-}
-
-.franquicia-box {
-    width: 50rem;
-    height: 100%;
-    text-align: right;
 }
 
 .franquicia-text {
