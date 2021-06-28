@@ -35,8 +35,15 @@
     }
 }
 
+ion-icon {
+    font-size: 2em;
+    color: $strong-violet;
+    padding-bottom: 0.8rem;
+}
+
 .bi-star-fill {
     font-size: 0.8em;
+    color: $light-violet !important;
 }
 
 /*pertence a catering.htl*/
@@ -55,13 +62,13 @@
     width: 14rem;
     height: 3.5rem;
     margin: 1rem 9rem 0 0;
-    background-color: violet;
-    border-color: violet;
+    background-color: transparent;
+    border: 2px solid #907CE6;
     box-shadow: none !important;
     border-radius: 0;
 
     &:hover {
-        background-color: violet;
+        background-color: #98014D;
     }
 }
 
@@ -77,4 +84,8 @@
         margin-left: 0;
         margin-right: 0;
     }
+}
+
+.form-productos {
+    background-color: 907CE6;
 }

@@ -1,9 +1,11 @@
 $strong-violet: #851370;
+$light-violet: rgb(225, 196, 239);
+$lighter-violet: rgb(244, 234, 249);
 $hover: rgb(132, 88, 155);
 
 /*navbar que se mantiene en todas las secciones del sitio*/
 nav {
-    background-color: rgb(239, 223, 248);
+    background-color: $light-violet;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .05);
     min-height: 100px;
 
@@ -41,7 +43,7 @@ nav {
     color: $strong-violet;
 
     &:hover {
-        color: $hover;
+        color: $strong-violet;
         text-decoration: none;
         transition: all 0.4s;
     }
@@ -72,7 +74,7 @@ nav {
 }
 
 .dropdown-menu {
-    background-color: rgb(239, 223, 248);
+    background-color: $light-violet;
     border: none;
     padding-top: 20px;
 }
@@ -83,7 +85,7 @@ nav {
     transition: background .25s, box-shadow .15s;
 
     &:hover {
-        background: rgba(224, 195, 238, 0.623);
-        color: $hover;
+        background: rgba(188, 128, 218, 0.623);
+        color: $strong-violet;
     }
 }

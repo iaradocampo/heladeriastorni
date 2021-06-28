@@ -33,7 +33,7 @@
 
 .boxes {
     height: 32rem;
-    background: linear-gradient(180deg, $lighter-violet 50%, $light-violet 50%);
+    background: linear-gradient(180deg, $lighter-violet 50%, #9B94FC 50%);
 }
 
 @media (max-width: 768px) {
@@ -54,13 +54,33 @@
 .texto {
     width: 80%;
     height: 15rem;
-    background: $lighter-violet;
+    background: $light-violet;
     border-radius: 0.6rem;
     box-shadow: 0rem 0rem 0.4rem rgba(0, 0, 0, 0.5);
     text-align: center;
     overflow: hidden;
     padding: -20px auto 0px auto;
     margin: 20px auto 0px auto;
+}
+
+@media (max-width: 1024px) {
+    .texto {
+        width: 100%;
+        height: 18rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto {
+        width: 100%;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 414px) {
+    .texto {
+        width: 100%;
+        height: 17rem;
+    }
 }
 
 .coments {
@@ -82,7 +102,7 @@
 .carousel-text {
     width: 100%;
     height: 20rem;
-    background: $light-violet;
+    background: #9B94FC;
     border-radius: 0;
     padding: 1.3rem;
 }
@@ -189,6 +209,12 @@
     text-align: right;
 }
 
+@media (max-width: 1024px) {
+    .banner-texto {
+        width: 80%;
+    }
+}
+
 @media (max-width: 768px) {
     .banner-texto {
         width: 60%;
@@ -230,10 +256,15 @@ iframe {
     margin-top: 2.5rem;
 }
 
+@media (max-width: 1024px) {
+    iframe {
+        width: 100%;
+    }
+}
+
 @media (max-width: 768px) and (min-width: 320px) {
     iframe {
         width: 100%;
-        height: 19rem;
     }
 }
 
@@ -241,6 +272,19 @@ iframe {
 .info-contacto {
     margin-top: 23rem;
     margin-left: 15rem
+}
+
+@media (max-width: 1024px) {
+    .info-contacto {
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-contacto {
+        margin-top: 5rem;
+        margin-left: 0;
+    }
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
@@ -276,7 +320,7 @@ iframe {
 
 /*espacio que se utiliza en varias secciones del sitio*/
 .space {
-    margin-bottom: 5rem;
+    padding-bottom: 5rem;
 }
 
 .space-section {

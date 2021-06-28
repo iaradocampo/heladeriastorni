@@ -49,6 +49,16 @@ body {
     }
 }
 
+/*pertenece a links en index.html, cafeteria.html, historia.html*/
+.a {
+    color: #98014D;
+    font-weight: bold;
+
+    &:hover {
+        color: #98014D;
+    }
+}
+
 /*pertenece a todos los p del sitio*/
 .parrafo {
     font-size: 1em;
@@ -66,14 +76,14 @@ body {
 /*pertenece a slider comentarios en index.html*/
 .carousel-title {
     font-size: 1.2em;
-    color: $font-black;
+    color: $font-white;
     margin-bottom: 0;
 }
 
 .carousel-parrafo {
     font-size: 1em;
     text-align: left;
-    color: $font-black;
+    color: $font-white;
     margin-top: 0.7em;
 }
 
@@ -82,6 +92,7 @@ body {
     font-size: 3em;
     font-family: 'Playfair Display', serif;
     color: $font-white;
+    text-align: center;
 
     &:hover {
         color: $font-white;
@@ -180,6 +191,12 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    #banner-titulo::after {
+        right: 3.5rem;
+    }
+}
+
 @media (max-width: 768px) {
     #banner-titulo::after {
         right: 2.8rem;
@@ -197,6 +214,12 @@ body {
     padding: 3rem 9rem 0 0;
     font-size: 3.5em;
     color: $font-white;
+}
+
+@media (max-width: 1024px) {
+    .banner-parrafo {
+        padding-right: 10rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -282,5 +305,6 @@ hr {
 /*pertenece a contacto.hmtl*/
 .parrafo-contacto {
     font-size: 1.2em;
-    color: $color-font;
+    color: $font-white;
+    font-weight: bold;
 }
