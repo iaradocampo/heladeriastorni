@@ -1,70 +1,4 @@
 @charset "UTF-8";
-/*navbar que se mantiene en todas las secciones del sitio*/
-nav {
-  background-color: #e1c4ef;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
-  min-height: 100px; }
-  nav li {
-    padding: 1.8rem 1.6rem; }
-
-/*links que dirigen a las secciones del sitio*/
-.nav-link {
-  position: relative; }
-  .nav-link:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: -15px;
-    margin: -5px 0;
-    background-color: #851370;
-    visibility: hidden;
-    transform: scaleX(0);
-    transition: all 0.4s ease-in-out 0s; }
-  .nav-link:hover:before {
-    visibility: visible;
-    transform: scaleX(1); }
-
-.nav-link {
-  display: flex;
-  font-size: 1.2em;
-  color: #851370; }
-  .nav-link:hover {
-    color: #851370;
-    text-decoration: none;
-    transition: all 0.4s; }
-
-/*logo home*/
-.logo-brand {
-  min-width: 120px;
-  max-width: 140px; }
-
-/*navbar responsive*/
-.navbar-toggler {
-  font-size: 2.5rem; }
-  .navbar-toggler:focus {
-    outline: none; }
-
-/*menu desplegable*/
-.dropdown:hover .dropdown-menu {
-  display: block; }
-
-.dropdown-toggle::after {
-  display: none; }
-
-.dropdown-menu {
-  background-color: #e1c4ef;
-  border: none;
-  padding-top: 20px; }
-
-.dropdown-item {
-  font-size: 1em;
-  color: #851370;
-  transition: background .25s, box-shadow .15s; }
-  .dropdown-item:hover {
-    background: rgba(188, 128, 218, 0.623);
-    color: #851370; }
-
 /*pertenece al body de todo el sitio*/
 body {
   font-family: 'Questrial', sans-serif;
@@ -142,7 +76,7 @@ body {
 
 @media (max-width: 768px) {
   .image-text {
-    font-size: 1.4em; } }
+    font-size: 1.6em; } }
 
 .subtitle-center {
   font-size: 1.6em;
@@ -188,7 +122,7 @@ body {
     .banner-titulo::after {
       right: 4rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .banner-titulo {
     font-size: 0.8em;
     padding: 0.8rem 1rem 0 0; }
@@ -220,7 +154,7 @@ body {
   #banner-titulo::after {
     right: 2.8rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   #banner-titulo::after {
     width: 15rem;
     right: 1.1rem; } }
@@ -238,7 +172,7 @@ body {
   .banner-parrafo {
     padding: 1rem 3rem 0 0; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .banner-parrafo {
     font-size: 2.5em;
     padding: 1rem 1rem 0 0; } }
@@ -289,14 +223,14 @@ body {
 .border-left {
   border-left: 2px solid #8c65a1 !important; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .border-left {
     border-left: none !important; } }
 
 hr {
   display: none; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   hr {
     display: block;
     border-top: 2px solid #812a71;
@@ -316,8 +250,74 @@ hr {
   font-weight: bold; }
 
 .parrafo-white {
-  font-size: 1.1em;
+  font-size: 1em;
   color: white; }
+
+/*navbar que se mantiene en todas las secciones del sitio*/
+nav {
+  background-color: #e1c4ef;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05);
+  min-height: 100px; }
+  nav li {
+    padding: 1.8rem 1.6rem; }
+
+/*links que dirigen a las secciones del sitio*/
+.nav-link {
+  position: relative; }
+  .nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -15px;
+    margin: -5px 0;
+    background-color: #851370;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out 0s; }
+  .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1); }
+
+.nav-link {
+  display: flex;
+  font-size: 1.2em;
+  color: #851370; }
+  .nav-link:hover {
+    color: #851370;
+    text-decoration: none;
+    transition: all 0.4s; }
+
+/*logo home*/
+.logo-brand {
+  min-width: 120px;
+  max-width: 140px; }
+
+/*navbar responsive*/
+.navbar-toggler {
+  font-size: 2.5em; }
+  .navbar-toggler:focus {
+    outline: none; }
+
+/*menu desplegable*/
+.dropdown:hover .dropdown-menu {
+  display: block; }
+
+.dropdown-toggle::after {
+  display: none; }
+
+.dropdown-menu {
+  background-color: #e1c4ef;
+  border: none;
+  padding-top: 20px; }
+
+.dropdown-item {
+  font-size: 1em;
+  color: #851370;
+  transition: background .25s, box-shadow .15s; }
+  .dropdown-item:hover {
+    background: rgba(188, 128, 218, 0.623);
+    color: #851370; }
 
 /*pertenece a index.html, productos.html, cafeteria.html, hoteles.html, catering.html, contacto.html*/
 .main {
@@ -925,14 +925,9 @@ iframe {
   padding-bottom: 5rem; }
 
 /*el siguiente formulario pertence a contacto.html*/
-form {
-  width: 500px;
+.contacto {
+  max-width: 500px;
   margin-top: 20px; }
-
-@media (max-width: 768px) and (min-width: 320px) {
-  form {
-    width: 100%;
-    height: auto; } }
 
 fieldset {
   border-color: transparent; }
@@ -978,7 +973,7 @@ fieldset {
 
 @media (max-width: 768px) and (min-width: 320px) {
   .btn-enviar {
-    font-size: 10px; } }
+    font-size: 1.2em; } }
 
 .btn-eliminar {
   background-color: #98014D;
@@ -996,7 +991,7 @@ fieldset {
 
 @media (max-width: 768px) and (min-width: 320px) {
   .btn-eliminar {
-    font-size: 10px; } }
+    font-size: 1.2em; } }
 
 /*pertenece a texto*/
 .input-container input:focus ~ label,
@@ -1011,7 +1006,7 @@ footer {
   min-height: 550px;
   text-align: center; }
 
-/*formulario dentro de footer*/
+/*formulario de contacto dentro de footer*/
 .form {
   width: 100%; }
 
@@ -1025,7 +1020,7 @@ footer {
     outline-width: 0 !important;
     box-shadow: none; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .form-control {
     margin-bottom: 10px; } }
 
@@ -1046,7 +1041,7 @@ footer {
     background-color: #9B94FC;
     transition: all 0.4s; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .button {
     top: 0;
     padding: 6px 16px; } }
@@ -1092,7 +1087,7 @@ footer {
   justify-content: flex-end;
   margin-top: 60px; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .footer-text {
     display: flex;
     flex-wrap: wrap; } }
@@ -1102,7 +1097,7 @@ footer {
   padding-left: 8px;
   padding-top: 20px; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
   .list-inline {
     margin: auto; } }
 
@@ -1113,7 +1108,7 @@ small {
   padding-right: 8px;
   padding-top: 20px; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
   small {
     margin-bottom: 2rem; } }
 

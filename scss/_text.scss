@@ -3,8 +3,12 @@ $lighter-violet: rgb(244, 234, 249);
 $light-violet: rgb(225, 196, 239);
 $blue-violet: #9B94FC;
 $light-red: #98014D;
-$size-one: 1.6em;
-$size-two: 2em;
+$size-1: 1em;
+$size-2: 1.2em;
+$size-3: 1.6em;
+$size-4: 2em;
+$size-5: 2.5em;
+$size-6: 3em;
 $font-black: rgb(0, 0, 0);
 $font-white: rgb(255, 255, 255);
 
@@ -16,7 +20,7 @@ body {
 
 /*pertene a index.html, productos.html, cafeteria.html, hoteles.html, locales.html, contacto.html*/
 .title {
-    font-size: $size-two;
+    font-size: $size-4;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -25,7 +29,7 @@ body {
 
 /*pertenece a index.html, historia.html, contacto.html*/
 .subtitle {
-    font-size: $size-two;
+    font-size: $size-4;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -33,7 +37,7 @@ body {
 }
 
 .text-box {
-    font-size: 2.5em;
+    font-size: $size-5;
     font-family: 'Playfair Display', serif;
     color: $font-white;
     text-align: center;
@@ -46,7 +50,7 @@ body {
 
 @media (max-width: 768px) {
     .text-box {
-        font-size: 2em;
+        font-size: $size-4;
     }
 }
 
@@ -62,13 +66,13 @@ body {
 
 /*pertenece a todos los p del sitio*/
 .parrafo {
-    font-size: 1em;
+    font-size: $size-1;
     color: $font-black;
 }
 
 /*pertenece a index.html*/
 .subtitulo-box {
-    font-size: $size-two;
+    font-size: $size-4;
     text-transform: uppercase;
     color: $color-font;
     padding-top: 0.4rem;
@@ -76,13 +80,13 @@ body {
 
 /*pertenece a slider comentarios en index.html*/
 .carousel-title {
-    font-size: 1.2em;
+    font-size: $size-2;
     color: $font-white;
     margin-bottom: 0;
 }
 
 .carousel-parrafo {
-    font-size: 1em;
+    font-size: $size-1;
     text-align: left;
     color: $font-white;
     margin-top: 0.7em;
@@ -90,7 +94,7 @@ body {
 
 /*pertenece a productos.html*/
 .image-text {
-    font-size: 3em;
+    font-size: $size-6;
     font-family: 'Playfair Display', serif;
     color: $font-white;
     text-align: center;
@@ -103,12 +107,12 @@ body {
 
 @media (max-width: 768px) {
     .image-text {
-        font-size: 1.4em;
+        font-size: $size-3;
     }
 }
 
 .subtitle-center {
-    font-size: $size-one;
+    font-size: $size-3;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     font-style: italic;
@@ -117,7 +121,7 @@ body {
 
 /*pertenece a productos.html, cafeteria.html, hoteles.html, catering.html*/
 .title-center {
-    font-size: $size-one;
+    font-size: $size-3;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -125,7 +129,7 @@ body {
 }
 
 .title-left {
-    font-size: $size-one;
+    font-size: $size-3;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: left;
@@ -161,7 +165,7 @@ body {
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
     .banner-titulo {
         font-size: 0.8em;
         padding: 0.8rem 1rem 0 0;
@@ -204,7 +208,7 @@ body {
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
     #banner-titulo::after {
         width: 15rem;
         right: 1.1rem;
@@ -229,9 +233,9 @@ body {
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
     .banner-parrafo {
-        font-size: 2.5em;
+        font-size: $size-5;
         padding: 1rem 1rem 0 0;
     }
 }
@@ -245,13 +249,13 @@ body {
 
 /*pertenece a cafeteria.html, hoteles.html, catering.html*/
 .btnText {
-    font-size: 1.2em;
+    font-size: $size-2;
     padding-top: 0.5rem;
     color: $font-white;
 }
 
 .title-big {
-    font-size: 3em;
+    font-size: $size-6;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: left;
@@ -260,7 +264,7 @@ body {
 
 /*pertenece a catering.html*/
 .titulo-catering {
-    font-size: $size-one;
+    font-size: $size-3;
     color: $font-white;
     text-align: left;
 }
@@ -268,7 +272,7 @@ body {
 .parrafo-catering {
     color: $font-white;
     text-align: left;
-    font-size: 1em;
+    font-size: $size-1;
 }
 
 .border-right {
@@ -283,7 +287,7 @@ body {
 
 /*pertenece a historia.html*/
 .titulo {
-    font-size: 3em;
+    font-size: $size-6;
     color: $color-font;
     font-family: 'Playfair Display', serif;
 }
@@ -292,7 +296,7 @@ body {
     border-left: 2px solid #8c65a1 !important;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
     .border-left {
         border-left: none !important;
     }
@@ -302,7 +306,7 @@ hr {
     display: none;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
     hr {
         display: block;
         border-top: 2px solid $color-font;
@@ -314,7 +318,7 @@ hr {
 
 /*pertenece a contacto.hmtl*/
 .titulo-white {
-    font-size: 3em;
+    font-size: $size-6;
     color: $font-white;
     font-family: 'Playfair Display', serif;
 }
@@ -326,6 +330,6 @@ hr {
 }
 
 .parrafo-white {
-    font-size: 1.1em;
+    font-size: $size-1;
     color: $font-white;
 }

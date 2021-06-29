@@ -39,7 +39,7 @@ nav {
 
 .nav-link {
     display: flex;
-    font-size: 1.2em;
+    font-size: $size-2;
     color: $strong-violet;
 
     &:hover {
@@ -57,7 +57,7 @@ nav {
 
 /*navbar responsive*/
 .navbar-toggler {
-    font-size: 2.5rem;
+    font-size: $size-5;
 
     &:focus {
         outline: none;
@@ -80,7 +80,7 @@ nav {
 }
 
 .dropdown-item {
-    font-size: 1em;
+    font-size: $size-1;
     color: $strong-violet;
     transition: background .25s, box-shadow .15s;
 

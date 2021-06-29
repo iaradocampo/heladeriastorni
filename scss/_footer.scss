@@ -9,7 +9,7 @@ footer {
     text-align: center;
 }
 
-/*formulario dentro de footer*/
+/*formulario de contacto dentro de footer*/
 .form {
     width: 100%;
 }
@@ -27,7 +27,7 @@ footer {
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
     .form-control {
         margin-bottom: 10px;
     }
@@ -48,12 +48,12 @@ footer {
     font-size: 1em;
 
     &:hover {
-        background-color: #9B94FC;
+        background-color: $blue-violet;
         transition: all 0.4s;
     }
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
     .button {
         top: 0;
         padding: 6px 16px;
@@ -65,7 +65,7 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    font-size: $size-one;
+    font-size: $size-3;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
@@ -109,7 +109,7 @@ footer {
     margin-top: 60px;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
     .footer-text {
         display: flex;
         flex-wrap: wrap;
@@ -122,7 +122,7 @@ footer {
     padding-top: 20px;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
     .list-inline {
         margin: auto;
     }
@@ -136,7 +136,7 @@ small {
     padding-top: 20px;
 }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 320px) and (max-width: 540px) {
     small {
         margin-bottom: 2rem;
     }
