@@ -42,7 +42,7 @@
 @media (min-width: 360px) and (max-width: 414px) {
     .slider-box {
         width: 100%;
-        padding: 2rem 2rem 0 0;
+        padding: 2rem 1rem 0 0;
     }
 }
 
@@ -267,26 +267,24 @@
 
 /*pertence a catering.html*/
 .btn-catering {
-    margin-left: 55rem;
+    text-align: right;
 }
 
 @media (max-width: 1024px) {
     .btn-catering {
-        margin-left: 44rem;
         padding-bottom: 2rem;
     }
 }
 
 @media (max-width: 768px) {
     .btn-catering {
-        margin-left: 28rem;
+        text-align: left;
         padding-bottom: 2rem;
     }
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
     .btn-catering {
-        margin-left: 0;
         padding-bottom: 2rem;
     }
 }
