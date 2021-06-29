@@ -1,6 +1,8 @@
 $color-font: #812a71;
 $lighter-violet: rgb(244, 234, 249);
 $light-violet: rgb(225, 196, 239);
+$blue-violet: #9B94FC;
+$light-red: #98014D;
 $size-one: 1.6em;
 $size-two: 2em;
 $font-black: rgb(0, 0, 0);
@@ -50,11 +52,11 @@ body {
 
 /*pertenece a links en index.html, cafeteria.html, historia.html*/
 .a {
-    color: #98014D;
+    color: $light-red;
     font-weight: bold;
 
     &:hover {
-        color: #98014D;
+        color: $light-red;
     }
 }
 
