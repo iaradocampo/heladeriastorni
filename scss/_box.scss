@@ -20,22 +20,22 @@
 }
 
 .slider-box {
-    width: 40%;
+    width: 30%;
     text-align: right;
-    padding: 10rem 10rem 0 0;
+    padding: 2rem 2rem 0 0;
 }
 
 @media (max-width: 1024px) {
     .slider-box {
-        width: 70%;
-        padding: 4rem 4rem 0 0;
+        width: 60%;
+        padding: 0 1rem 0 0;
     }
 }
 
 @media (max-width: 768px) {
     .slider-box {
-        width: 70%;
-        padding: 4rem 4rem 0 0;
+        width: 60%;
+        padding: 0 1rem 0 0;
     }
 }
 
