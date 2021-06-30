@@ -38,20 +38,10 @@ locales {
     margin: auto;
 }
 
-@media (max-width: 1024px) {
-    #img1 {
-        height: 600px;
-        object-fit: cover;
-        margin: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    #img1 {
-        height: 500px;
-        object-fit: cover;
-        margin: auto;
-    }
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 #img2 {
@@ -60,22 +50,6 @@ locales {
     max-height: 700px;
     object-fit: cover;
     margin: auto;
-}
-
-@media (max-width: 1024px) {
-    #img2 {
-        height: 600px;
-        object-fit: cover;
-        margin: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    #img2 {
-        height: 500px;
-        object-fit: cover;
-        margin: auto;
-    }
 }
 
 .item {
@@ -135,8 +109,8 @@ locales {
     .cafeteria,
     .hotel,
     .catering {
-        width: 400px;
-        height: 700px;
+        width: 450px;
+        height: 600px;
     }
 }
 
