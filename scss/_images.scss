@@ -1,36 +1,5 @@
-$imagen: cafeteria,
-hoteles,
-catering,
-historia,
-locales;
-
-/*pertence a cateria.html, hoteles.html, catering.html, historia.html, locales.html*/
-@each $imagen in cafeteria,
-hoteles,
-catering,
-historia,
-locales {
-    .#{$imagen}-icon {
-        background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)),
-        url('../img/#{$imagen}.jpeg');
-        background-size: cover;
-        width: 100%;
-        min-height: 44rem;
-    }
-}
-
-@media (min-width: 360px) and (max-width: 414px) {
-
-    .cafeteria-icon,
-    .hoteles-icon,
-    .historia-icon,
-    .locales-icon {
-        min-height: 34rem;
-    }
-}
-
-/*pertenece a slider index.html*/
-#img1 {
+/*pertenece a slider de todas las secciones*/
+.size-slider {
     width: 100vw;
     min-height: 500px;
     max-height: 700px;
@@ -42,14 +11,6 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
-}
-
-#img2 {
-    width: 100vw;
-    min-height: 500px;
-    max-height: 700px;
-    object-fit: cover;
-    margin: auto;
 }
 
 .item {
@@ -104,16 +65,6 @@ img {
     height: 100%;
 }
 
-@media (max-width: 768px) {
-
-    .cafeteria,
-    .hotel,
-    .catering {
-        width: 450px;
-        height: 600px;
-    }
-}
-
 .img-transition {
     width: 32rem;
     height: 22rem;
@@ -152,42 +103,68 @@ img {
 }
 
 /*pertence a img en catering.html*/
+.size-catering {
+    width: 100vw;
+    height: 700px;
+    object-fit: cover;
+    margin: auto;
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+    .size-catering {
+        height: 1077px;
+    }
+}
+
 #pote {
     width: 20%;
-    padding-top: 1.5rem;
-    text-align: center;
-    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    margin: auto;
+    padding-bottom: 1.4rem;
+}
+
+@media (max-width: 1024px) {
+    #pote {
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
     #pote {
         width: 5rem;
-        margin-right: 15rem;
+        margin-left: 9.5rem;
     }
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
     #pote {
-        margin-right: 5rem;
+        margin: auto;
     }
 }
 
 #balde {
     width: 30%;
     padding-top: 1.5rem;
-    padding-bottom: 1.2rem;
+    padding-bottom: 1.5rem;
+    margin: auto;
+}
+
+@media (max-width: 1024px) {
+    #balde {
+        padding-bottom: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
     #balde {
         width: 7rem;
-        margin-right: 15rem;
+        margin-left: 8.5rem;
     }
 }
 
 @media (min-width: 360px) and (max-width: 414px) {
     #balde {
-        margin-right: 6rem;
+        margin: auto;
     }
 }
 

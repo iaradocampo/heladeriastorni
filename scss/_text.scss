@@ -138,7 +138,7 @@ body {
 
 /*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .banner-titulo {
-    padding: 6rem 9rem 0 0;
+    padding: 3rem 9rem 0 0;
     font-size: 0.8em;
     text-transform: uppercase;
     color: $font-white;
@@ -155,9 +155,19 @@ body {
     }
 }
 
+@media (max-width: 1024px) {
+    .banner-titulo {
+        padding: 4rem 10rem 0 0;
+
+        &::after {
+            right: 11rem;
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .banner-titulo {
-        padding: 2rem 3rem 0 0;
+        padding: 4rem 3rem 0 0;
 
         &::after {
             right: 4rem;
@@ -192,26 +202,30 @@ body {
         height: 0.1rem;
         background-color: $light-violet;
         margin-top: 3rem;
-        right: 25rem;
+        right: 27rem;
     }
 }
 
 @media (max-width: 1024px) {
     #banner-titulo::after {
-        right: 3.5rem;
+        right: 6rem;
     }
 }
 
 @media (max-width: 768px) {
-    #banner-titulo::after {
-        right: 2.8rem;
+    #banner-titulo {
+        padding-top: 3rem;
+
+        &::after {
+            right: 5rem;
+        }
     }
 }
 
 @media (min-width: 360px) and (max-width: 540px) {
     #banner-titulo::after {
         width: 15rem;
-        right: 1.1rem;
+        right: 2.5rem;
     }
 }
 
@@ -245,6 +259,13 @@ body {
     font-size: 4em;
     color: $font-white;
     text-align: right;
+}
+
+@media (min-width: 360px) and (max-width: 540px) {
+    #banner-parrafo {
+        padding-top: 1rem;
+        font-size: 2.5em;
+    }
 }
 
 /*pertenece a cafeteria.html, hoteles.html, catering.html*/

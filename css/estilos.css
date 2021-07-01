@@ -102,7 +102,7 @@ body {
 
 /*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
 .banner-titulo {
-  padding: 6rem 9rem 0 0;
+  padding: 3rem 9rem 0 0;
   font-size: 0.8em;
   text-transform: uppercase;
   color: white;
@@ -116,9 +116,15 @@ body {
     margin-top: 3rem;
     right: 10rem; }
 
+@media (max-width: 1024px) {
+  .banner-titulo {
+    padding: 4rem 10rem 0 0; }
+    .banner-titulo::after {
+      right: 11rem; } }
+
 @media (max-width: 768px) {
   .banner-titulo {
-    padding: 2rem 3rem 0 0; }
+    padding: 4rem 3rem 0 0; }
     .banner-titulo::after {
       right: 4rem; } }
 
@@ -144,20 +150,22 @@ body {
     height: 0.1rem;
     background-color: #e1c4ef;
     margin-top: 3rem;
-    right: 25rem; }
+    right: 27rem; }
 
 @media (max-width: 1024px) {
   #banner-titulo::after {
-    right: 3.5rem; } }
+    right: 6rem; } }
 
 @media (max-width: 768px) {
-  #banner-titulo::after {
-    right: 2.8rem; } }
+  #banner-titulo {
+    padding-top: 3rem; }
+    #banner-titulo::after {
+      right: 5rem; } }
 
 @media (min-width: 360px) and (max-width: 540px) {
   #banner-titulo::after {
     width: 15rem;
-    right: 1.1rem; } }
+    right: 2.5rem; } }
 
 .banner-parrafo {
   padding: 3rem 9rem 0 0;
@@ -182,6 +190,11 @@ body {
   font-size: 4em;
   color: white;
   text-align: right; }
+
+@media (min-width: 360px) and (max-width: 540px) {
+  #banner-parrafo {
+    padding-top: 1rem;
+    font-size: 2.5em; } }
 
 /*pertenece a cafeteria.html, hoteles.html, catering.html*/
 .btnText {
@@ -338,7 +351,7 @@ nav {
   justify-content: flex-end; }
 
 .slider-box {
-  width: 30%;
+  width: 35%;
   text-align: right;
   padding: 2rem 2rem 0 0; }
 
@@ -501,51 +514,16 @@ nav {
     background: rgba(0, 0, 0, 0.7); }
 
 /*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
-.box-banner {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 100%; }
-
 #banner {
-  width: 100%;
+  width: 55%;
   height: 100%;
+  margin: auto;
   text-align: center; }
 
-.banner-texto {
-  width: 30%;
-  height: 100%;
-  text-align: right; }
-
 @media (max-width: 1024px) {
-  .banner-texto {
-    width: 80%; } }
-
-@media (max-width: 768px) {
-  .banner-texto {
-    width: 60%; } }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .banner-texto {
-    width: 70%;
-    margin-top: 4rem; } }
-
-/*pertence a catering.html*/
-.btn-catering {
-  text-align: right; }
-
-@media (max-width: 1024px) {
-  .btn-catering {
-    padding-bottom: 2rem; } }
-
-@media (max-width: 768px) {
-  .btn-catering {
-    text-align: left;
-    padding-bottom: 2rem; } }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .btn-catering {
-    padding-bottom: 2rem; } }
+  #banner {
+    width: 80%;
+    height: 100%; } }
 
 /*pertence a historia.html*/
 .main-historia {
@@ -671,7 +649,7 @@ iframe {
 
 @media (min-width: 360px) and (max-width: 414px) {
   .bi-truck {
-    margin-right: 6rem; } }
+    margin: auto; } }
 
 /*icon general*/
 .bi {
@@ -691,7 +669,7 @@ iframe {
 
 @media (max-width: 1024px) {
   .btn {
-    margin-left: 2.5rem; } }
+    margin-right: 10rem; } }
 
 @media (max-width: 768px) {
   .btn {
@@ -706,46 +684,8 @@ iframe {
 .form-productos {
   background-color: 907CE6; }
 
-/*pertence a cateria.html, hoteles.html, catering.html, historia.html, locales.html*/
-.cafeteria-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/cafeteria.jpeg");
-  background-size: cover;
-  width: 100%;
-  min-height: 44rem; }
-
-.hoteles-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/hoteles.jpeg");
-  background-size: cover;
-  width: 100%;
-  min-height: 44rem; }
-
-.catering-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/catering.jpeg");
-  background-size: cover;
-  width: 100%;
-  min-height: 44rem; }
-
-.historia-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/historia.jpeg");
-  background-size: cover;
-  width: 100%;
-  min-height: 44rem; }
-
-.locales-icon {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6)), url("../img/locales.jpeg");
-  background-size: cover;
-  width: 100%;
-  min-height: 44rem; }
-
-@media (min-width: 360px) and (max-width: 414px) {
-  .cafeteria-icon,
-  .hoteles-icon,
-  .historia-icon,
-  .locales-icon {
-    min-height: 34rem; } }
-
-/*pertenece a slider index.html*/
-#img1 {
+/*pertenece a slider de todas las secciones*/
+.size-slider {
   width: 100vw;
   min-height: 500px;
   max-height: 700px;
@@ -756,13 +696,6 @@ img {
   display: block;
   max-width: 100%;
   height: auto; }
-
-#img2 {
-  width: 100vw;
-  min-height: 500px;
-  max-height: 700px;
-  object-fit: cover;
-  margin: auto; }
 
 .item {
   width: 100%;
@@ -805,13 +738,6 @@ img {
   width: 100%;
   height: 100%; }
 
-@media (max-width: 768px) {
-  .cafeteria,
-  .hotel,
-  .catering {
-    width: 450px;
-    height: 600px; } }
-
 .img-transition {
   width: 32rem;
   height: 22rem;
@@ -840,34 +766,53 @@ img {
     transform: scale(2); }
 
 /*pertence a img en catering.html*/
+.size-catering {
+  width: 100vw;
+  height: 700px;
+  object-fit: cover;
+  margin: auto; }
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .size-catering {
+    height: 1077px; } }
+
 #pote {
   width: 20%;
-  padding-top: 1.5rem;
-  text-align: center;
-  padding-bottom: 1rem; }
+  padding-top: 1.2rem;
+  margin: auto;
+  padding-bottom: 1.4rem; }
+
+@media (max-width: 1024px) {
+  #pote {
+    padding-bottom: 2rem; } }
 
 @media (max-width: 768px) {
   #pote {
     width: 5rem;
-    margin-right: 15rem; } }
+    margin-left: 9.5rem; } }
 
 @media (min-width: 360px) and (max-width: 414px) {
   #pote {
-    margin-right: 5rem; } }
+    margin: auto; } }
 
 #balde {
   width: 30%;
   padding-top: 1.5rem;
-  padding-bottom: 1.2rem; }
+  padding-bottom: 1.5rem;
+  margin: auto; }
+
+@media (max-width: 1024px) {
+  #balde {
+    padding-bottom: 2rem; } }
 
 @media (max-width: 768px) {
   #balde {
     width: 7rem;
-    margin-right: 15rem; } }
+    margin-left: 8.5rem; } }
 
 @media (min-width: 360px) and (max-width: 414px) {
   #balde {
-    margin-right: 6rem; } }
+    margin: auto; } }
 
 /*pertenece a historia.html*/
 .historia {
