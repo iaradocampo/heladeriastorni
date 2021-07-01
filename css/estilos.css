@@ -355,17 +355,12 @@ nav {
   text-align: right;
   padding: 2rem 2rem 0 0; }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .slider-box {
     width: 60%;
     padding: 0 1rem 0 0; } }
 
-@media (max-width: 768px) {
-  .slider-box {
-    width: 60%;
-    padding: 0 1rem 0 0; } }
-
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .slider-box {
     width: 100%;
     padding: 2rem 1rem 0 0; } }
@@ -418,11 +413,7 @@ nav {
 @media (max-width: 1024px) {
   .texto {
     width: 100%;
-    height: 18rem; } }
-
-@media (max-width: 768px) {
-  .texto {
-    width: 100%; } }
+    height: 20rem; } }
 
 @media (min-width: 360px) and (max-width: 414px) {
   .texto {
@@ -453,13 +444,13 @@ nav {
   .carousel-text {
     height: 25rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .carousel-text {
     width: 90%;
     height: 20rem;
     margin: auto; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .hide {
     display: none; } }
 
@@ -513,7 +504,7 @@ nav {
     transform: scale(1.1);
     background: rgba(0, 0, 0, 0.7); }
 
-/*pertence a cafeteria.html, hoteles.html, catering.html, historia.html, locales.html*/
+/*pertence a catering.html*/
 #banner {
   width: 55%;
   height: 100%;
@@ -541,31 +532,15 @@ nav {
   margin: 6rem 0 6rem 0; }
 
 iframe {
-  margin-top: 2.5rem; }
-
-@media (max-width: 1024px) {
-  iframe {
-    width: 100%; } }
-
-@media (max-width: 768px) and (min-width: 320px) {
-  iframe {
-    width: 100%; } }
+  margin-top: 2.5rem;
+  width: 100%; }
 
 /*pertenece a contacto.html*/
 .info-contacto {
-  margin-top: 23rem;
+  margin-top: 20rem;
   margin-left: 15rem; }
 
-@media (max-width: 1024px) {
-  .info-contacto {
-    margin-top: 20rem; } }
-
-@media (max-width: 768px) {
-  .info-contacto {
-    margin-top: 5rem;
-    margin-left: 0; } }
-
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .info-contacto {
     margin-top: 5rem;
     margin-left: 0; } }
@@ -573,16 +548,7 @@ iframe {
 .franquicia-info {
   margin-top: 15rem; }
 
-@media (max-width: 1024px) {
-  .franquicia-info {
-    width: 85%; } }
-
-@media (max-width: 768px) {
-  .franquicia-info {
-    margin-top: 0;
-    margin-bottom: 3rem; } }
-
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 768px) {
   .franquicia-info {
     margin-top: 0;
     margin-bottom: 5rem; } }
@@ -622,7 +588,7 @@ iframe {
   .carousel-control-next {
     padding-top: 200px; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .carousel-control-prev,
   .carousel-control-next {
     margin-left: 0px;
@@ -797,7 +763,7 @@ img {
     width: 5rem;
     margin-left: 9.5rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   #pote {
     margin: auto; } }
 
@@ -816,7 +782,7 @@ img {
     width: 7rem;
     margin-left: 8.5rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   #balde {
     margin: auto; } }
 
@@ -839,7 +805,7 @@ img {
   .historia {
     margin: auto; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .historia {
     width: 100%;
     height: 100%;
