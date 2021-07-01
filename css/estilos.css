@@ -131,7 +131,7 @@ body {
 @media (min-width: 360px) and (max-width: 540px) {
   .banner-titulo {
     font-size: 0.8em;
-    padding: 0.8rem 1rem 0 0; }
+    padding: 1rem 1rem 0 0; }
     .banner-titulo::after {
       right: 2rem;
       width: 15rem; } }
@@ -476,7 +476,7 @@ nav {
     width: 100%;
     height: 700px; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .images {
     width: 100%;
     height: 100%; } }
@@ -532,7 +532,7 @@ nav {
   padding-top: 4rem;
   margin-bottom: 4rem; }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   #description {
     margin-top: 0; } }
 
@@ -647,7 +647,7 @@ iframe {
   .bi-truck {
     margin-right: 15rem; } }
 
-@media (min-width: 360px) and (max-width: 414px) {
+@media (min-width: 360px) and (max-width: 540px) {
   .bi-truck {
     margin: auto; } }
 
