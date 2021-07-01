@@ -738,6 +738,12 @@ img {
   width: 100%;
   height: 100%; }
 
+@media (min-width: 360px) and (max-width: 768px) {
+  #cafeteria,
+  #hotel,
+  #catering {
+    height: 600px; } }
+
 .img-transition {
   width: 32rem;
   height: 22rem;
