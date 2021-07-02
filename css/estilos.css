@@ -340,7 +340,7 @@ nav {
 .description {
   margin-top: 7rem; }
 
-/*pertence a index.html*/
+/*pertence a los banner de todo el sitio*/
 .capa-slider {
   position: absolute;
   top: 0;
@@ -365,6 +365,7 @@ nav {
     width: 100%;
     padding: 2rem 1rem 0 0; } }
 
+/*pertence a index.html*/
 .img-index {
   width: 100%;
   height: 100%;
@@ -650,7 +651,7 @@ iframe {
 .form-productos {
   background-color: 907CE6; }
 
-/*pertenece a slider de todas las secciones*/
+/*pertenece a los banner de todo el sitio*/
 .size-slider {
   width: 100vw;
   min-height: 500px;
@@ -949,7 +950,7 @@ footer {
   display: flex;
   justify-content: center;
   padding-top: 2rem;
-  font-size: 1.6em;
+  font-size: 2em;
   color: #812a71;
   font-family: 'Playfair Display', serif;
   text-align: center; }
@@ -972,18 +973,18 @@ footer {
 /*listas con vículos que redirigen a otras secciones*/
 .li-footer {
   text-align: left;
-  padding-bottom: 17px; }
+  padding-bottom: 1rem; }
 
 /*línea de separación*/
 .border-top {
   border-top: 2px solid #8c65a1 !important;
-  margin-top: 70px; }
+  margin-top: 5rem; }
 
 /*box para texto e icons*/
 .footer-text {
   display: flex;
   justify-content: flex-end;
-  margin-top: 60px; }
+  margin-top: 4rem; }
 
 @media (min-width: 320px) and (max-width: 540px) {
   .footer-text {
@@ -991,7 +992,7 @@ footer {
     flex-wrap: wrap; } }
 
 .list-inline-item {
-  font-size: 1.1em;
+  font-size: 1em;
   padding-left: 8px;
   padding-top: 20px; }
 
@@ -1001,13 +1002,14 @@ footer {
 
 /*texto de derechos reservados*/
 small {
-  font-size: 0.9em;
+  font-size: 1em;
   color: black;
   padding-right: 8px;
   padding-top: 20px; }
 
 @media (min-width: 320px) and (max-width: 540px) {
   small {
+    margin: auto;
     margin-bottom: 2rem; } }
 
 /*main de la sección*/

@@ -65,14 +65,14 @@ footer {
     display: flex;
     justify-content: center;
     padding-top: 2rem;
-    font-size: $size-3;
+    font-size: $size-4;
     color: $color-font;
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
 .titulo-parrafo {
-    font-size: 1.2em;
+    font-size: $size-2;
     font-family: 'Playfair Display', serif;
     color: $font-black;
     text-align: left;
@@ -80,7 +80,7 @@ footer {
 }
 
 .parrafo-footer {
-    font-size: 1em;
+    font-size: $size-1;
     color: $font-black;
     text-align: left;
 
@@ -93,20 +93,20 @@ footer {
 /*listas con vículos que redirigen a otras secciones*/
 .li-footer {
     text-align: left;
-    padding-bottom: 17px;
+    padding-bottom: 1rem;
 }
 
 /*línea de separación*/
 .border-top {
     border-top: 2px solid #8c65a1 !important;
-    margin-top: 70px;
+    margin-top: 5rem;
 }
 
 /*box para texto e icons*/
 .footer-text {
     display: flex;
     justify-content: flex-end;
-    margin-top: 60px;
+    margin-top: 4rem;
 }
 
 @media (min-width: 320px) and (max-width: 540px) {
@@ -117,7 +117,7 @@ footer {
 }
 
 .list-inline-item {
-    font-size: 1.1em;
+    font-size: $size-1;
     padding-left: 8px;
     padding-top: 20px;
 }
@@ -130,7 +130,7 @@ footer {
 
 /*texto de derechos reservados*/
 small {
-    font-size: 0.9em;
+    font-size: $size-1;
     color: $font-black;
     padding-right: 8px;
     padding-top: 20px;
@@ -138,6 +138,7 @@ small {
 
 @media (min-width: 320px) and (max-width: 540px) {
     small {
+        margin: auto;
         margin-bottom: 2rem;
     }
 }
