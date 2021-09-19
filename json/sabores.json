@@ -1,0 +1,125 @@
+[{
+    "id": 1,
+    "descripcion": "CREMA CHANTILLY"
+},
+{
+    "id": 2,
+    "descripcion": "CREMA FLAN"
+},{
+    "id": 3,
+    "descripcion": "ARCO IRIS"
+},{
+    "id": 4,
+    "descripcion": "CREMA DEL CIELO"
+},{
+    "id": 5,
+    "descripcion": "CREMA A LA REINA"
+},{
+    "id": 6,
+    "descripcion": "FRUTILLA A LA CREMA"
+},{
+    "id": 7,
+    "descripcion": "BANANITA DOLCA"
+},{
+    "id": 8,
+    "descripcion": "MENTA GRANIZADA"
+},{
+    "id": 9,
+    "descripcion": "COCO"
+},{
+    "id": 10,
+    "descripcion": "ALMENDRADO"
+},{
+    "id": 11,
+    "descripcion": "BANANA SPLIT"
+},{
+    "id": 12,
+    "descripcion": "SAMBAYON"
+},{
+    "id": 13,
+    "descripcion": "PISTACHO"
+},{
+    "id": 14,
+    "descripcion": "CREMA TRAMONTANA"
+},{
+    "id": 15,
+    "descripcion": "VAINILLA"
+},{
+    "id": 16,
+    "descripcion": "CREMA CODER"
+},{
+    "id": 17,
+    "descripcion": "GRANIZADO"
+},{
+    "id": 18,
+    "descripcion": "MOUSSE DE MARACUJA"
+},{
+    "id": 19,
+    "descripcion": "DULCE DE LECHE"
+},{
+    "id": 20,
+    "descripcion": "DULCE DE LECHE GRANIZADO"
+},{
+    "id": 21,
+    "descripcion": "DULCE DE LECHE TENTACION"
+},{
+    "id": 22,
+    "descripcion": "DULCE DE LECHE CON NUEZ"
+},{
+    "id": 23,
+    "descripcion": "DULCE DE LECHE STORNI"
+},{
+    "id": 24,
+    "descripcion": "CHOCOLATE"
+},{
+    "id": 25,
+    "descripcion": "CHOCOLATE C/ALMENDRAS"
+},{
+    "id": 26,
+    "descripcion": "CHOCOLATE NEVADO"
+},{
+    "id": 27,
+    "descripcion": "CHOCOLATE AMARGO"
+},{
+    "id": 28,
+    "descripcion": "CHOCOLATE BLANCO"
+},{
+    "id": 29,
+    "descripcion": "FRUTILLA AL AGUA"
+},{
+    "id": 30,
+    "descripcion": "ANANA"
+},{
+    "id": 31,
+    "descripcion": "LIMON"
+},{
+    "id": 32,
+    "descripcion": "LIMON CON FRUTILLA"
+},{
+    "id": 33,
+    "descripcion": "YOGURT"
+},{
+    "id": 34,
+    "descripcion": "MASCARPONE STORNI"
+},{
+    "id": 35,
+    "descripcion": "CREMA ROCHER"
+},{
+    "id": 36,
+    "descripcion": "SELVA NEGRA"
+},{
+    "id": 37,
+    "descripcion": "MOUSSE CHOCOLATE"
+},{
+    "id": 38,
+    "descripcion": "CREMA OREO"
+}
+,{
+    "id": 39,
+    "descripcion": "CHOCOLATE BARILOCHE"
+}
+,{
+    "id": 40,
+    "descripcion": "CREMA KINDER"
+}
+]

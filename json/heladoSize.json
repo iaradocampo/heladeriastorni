@@ -1,0 +1,22 @@
+[{
+    "id": 1,
+    "importe": 1050,
+    "url": "img/size-kilo.png",
+    "cantidad": 4, 
+    "descripcion": "1 kg"
+},
+{
+    "id": 2,
+    "importe": 590,
+    "url": "img/size-medio.png",
+    "cantidad": 3,
+    "descripcion": "1/2 kg"
+},
+{
+    "id": 3,
+    "importe": 330,
+    "url": "img/size-cuarto.png",
+    "cantidad": 2,
+    "descripcion": "1/4 kg"
+}
+]

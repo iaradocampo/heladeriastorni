@@ -49,6 +49,22 @@ nav {
     }
 }
 
+.link-pedidos {
+    display: flex;
+    font-size: $size-2;
+    color: $font-white;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    background-color: #907CE6;
+
+    &:hover {
+        color: $font-white;
+        text-decoration: none;
+        transition: all 0.4s;
+        background-color: $blue-violet;
+    }
+}
+
 /*logo home*/
 .logo-brand {
     min-width: 120px;

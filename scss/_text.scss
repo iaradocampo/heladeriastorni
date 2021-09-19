@@ -354,3 +354,28 @@ hr {
     font-size: $size-1;
     color: $font-white;
 }
+
+/*pertenece a pedidos*/
+.p-pedidos {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 2rem 0 2rem 0;
+}
+
+.p-title-model {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 1.6rem;
+}
+
+.p-model {
+    font-size: 1.1em;
+    color: black;
+}
+
+h4 {
+    font-size: $size-4;
+    color: $color-font;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}

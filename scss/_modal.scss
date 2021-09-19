@@ -1,0 +1,31 @@
+.model-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 0;
+}
+
+.model {
+    height: 100%;
+    width: 40rem;
+    top: 2rem;
+    margin: auto;
+    padding: 20px;
+    background-color: $lighter-violet;
+    border-radius: 10px;
+    text-align: left;
+    border: none;
+    box-shadow: 7px 10px 20px -5px rgba(0, 0, 0, 0.527);
+    transform: scale(0);
+    padding: 1rem 3rem;
+    position: fixed;
+    z-index: 1;
+}
+
+.bi-x-lg {
+    font-size: 25px;
+    cursor: pointer;
+    color: #907CE6;
+    position: relative;
+}
