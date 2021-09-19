@@ -1,23 +1,73 @@
+const divSizes = $(".input-helado");
+const urlJsonSabores = "json/sabores.json";
+const urlJsonSize = "json/heladoSize.json";
+const urlGet = "https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8"
+
+let sizeActual = 0;
 let i = 0;
 let e = 0;
 let numeroPedido = 0;
-let divSizes = $(".input-helado");
-let optionSabores = $("#select-sabores");
-let idSizeActual = 0;
-const urlJsonSabores = "json/sabores.json";
-const urlJsonSize = "json/heladoSize.json";
-
-const sizes = [];
-const sabores = [];
+let sizes = [];
 
 $(function () {
+  //oculto elementos a utilizar mas tarde
+  hideElements();
 
+  //obtengo objetos del json y los utilizo para appendear y armar un array que luego voy a utilizar
+  getJsonSizes();
+
+  //onclick del boton ¡Hace tu pedido! al final del formulario
+  $("#open").on("click", function () {
+    //obtengo numero random para luego mostrar en nro de pedido al final de la ejecucion
+    getRandomNumber();
+    //valido campos del formulario
+    let check = validarCampos();
+    if (check) {
+      //se muestra el modal con animacion
+      showModal();
+      $(".model").css('transform', 'scale(1)');
+      $(".model").animate({
+          right: '0px',
+        },
+        "slow");
+    }
+  });
+
+  //onclick de la cruz del modal
+  $("#close").on("click", function () {
+    $(".model").css('transform', 'scale(0)');
+    //reseteo formulario
+    $(".pedido-online")[0].reset();
+    //borro selects ya appendeados
+    $(".option-sabores").remove();
+    //vuelvo a ocultar los elementos que habia mostrado
+    hideElements();
+    //no me gusta pero no encontre otra manera
+    sizeActual = $(".vueltaAUndefined");
+  });
+
+});
+
+function hideElements() {
   $(".envios").hide();
   $(".datos").hide();
   $(".select-pago").hide();
   $(".p-pedidos").hide();
   $(".efectivo").attr('disabled', true);
+}
 
+function getRandomNumber() {
+  $.ajax({
+    method: "GET",
+    url: urlGet,
+    success: function (respuesta) {
+      let misDatos = respuesta;
+      numeroPedido = parseInt(misDatos.data[0]);
+    }
+  });
+}
+
+function getJsonSizes() {
   $.getJSON(urlJsonSize, function (respuesta, estado) {
     if (estado === "success") {
       let mySizes = respuesta;
@@ -31,47 +81,13 @@ $(function () {
       }
     }
   });
-
-  const urlGet = "https://qrng.anu.edu.au/API/jsonI.php?length=1&type=uint8"
-  $.ajax({
-    method: "GET",
-    url: urlGet,
-    success: function (respuesta) {
-      let misDatos = respuesta;
-      numeroPedido = parseInt(misDatos.data[0]);
-    }
-  });
-
-  $("#open").on("click", function () {
-    let check = validarCampos();
-    if (check) {
-      showModal();
-      $(".model").css('transform', 'scale(1)');
-      $(".model").animate({
-          right: '0px',
-        },
-        "slow");
-    }
-  });
-
-
-  $("#close").on("click", function () {
-    $(".model").css('transform', 'scale(0)');
-    $(".pedido-online")[0].reset();
-    $(".option-sabores").remove();
-    $(".envios").hide();
-    $(".datos").hide();
-    $(".select-pago").hide();
-    $(".p-pedidos").hide();
-  });
-
-});
+}
 
 function validarCampos() {
   let i = 0;
   let cantidadDatos = 0;
-  valorFinal = true;
-  let size = sizes.find(e => e.id == idSizeActual.id);
+  let valorFinal = true;
+  let size = sizes.find(e => e.id == sizeActual.id);
   let arraySabores = $(".option-sabores");
   let deliveryAway = $("input[id][type=radio][name=entrega]:checked").attr('id');
   let medioPago = $("input[id][type=radio][name=pago]:checked").attr('id');
@@ -139,13 +155,12 @@ function validarCampos() {
     }
 
   }
-
+  // se entiende que como no retorno false, retorna true
   return valorFinal;
 }
 
 function showModal() {
-
-  let size = sizes.find(e => e.id == idSizeActual.id);
+  let size = sizes.find(e => e.id == sizeActual.id);
   let arraySabores = $(".option-sabores");
   let deliveryAway = $("input[id][type=radio][name=entrega]:checked").attr('id');
   let medioPago = $("input[id][type=radio][name=pago]:checked").attr('id');
@@ -153,6 +168,7 @@ function showModal() {
   let datos = $(".info-datos");
   let i = 0;
 
+  //comienzo del armado del mensaje de salida
   let salida = `<h4>Detalle del pedido</h4>`;
 
   salida += `<p class="p-title-model"><strong>Nro de pedido:</strong> #${numeroPedido}</p>`;
@@ -205,25 +221,27 @@ function showModal() {
     salida += `<p class="p-title-model"><strong>Total:</strong> $${size.importe + 200}</p>`;
   }
 
+  //se agrega el mensaje de salida al tag #mensaje
   $("#mensaje").html(salida);
 }
 
 function loadSelectSabores(cantidad) {
-  //recupero el id del size elegido
-  idSizeActual = sizes.find(e => e.cantidad == cantidad);
-  let cantidadSabores = cantidad;
-
-  let divSelectSabores = $(".sabores");
   $(".option-sabores").remove();
+  //recupero el id del size elegido
+  sizeActual = sizes.find(e => e.cantidad == cantidad);
+  let cantidadSabores = cantidad;
+  let divSelectSabores = $(".sabores");
+
+  //apendeo selects en base a la cantidad de sabores que entran en cada pote de helado
   for (let i = 0; i < cantidadSabores; i++) {
     divSelectSabores.append(`<select class="option-sabores" name="sabor" id="select-sabores"></select>`);
   }
-  let optionSabores = $(".option-sabores");
 
+  let optionSabores = $(".option-sabores");
+  //obtengo json de sabores y lo uso para llenar los select anteriomente appendeados
   $.getJSON(urlJsonSabores, function (respuesta, estado) {
     if (estado === "success") {
       let misSabores = respuesta;
-      sabores.push(respuesta);
       for (let i = 0; i < optionSabores.length; i++) {
         optionSabores.eq(i).append(`<option value="0">Selecciona el sabor</option>`);
         for (const currentSabor of misSabores) {
@@ -238,6 +256,7 @@ function loadSelectSabores(cantidad) {
   });
 }
 
+//function que se llama desde input radio id="delivery" en pedidos.html
 function showEnvio() {
   $(".envios").show();
   $("#barrio").attr('disabled', false);
@@ -246,7 +265,7 @@ function showEnvio() {
   $(".p-pedidos").show();
   $(".select-pago").show();
 }
-
+//function que se llama desde input radio id="retiro" en pedidos.html
 function showDatos() {
   $(".datos").show();
   $(".envios").hide();
@@ -255,11 +274,11 @@ function showDatos() {
   $(".select-pago").show();
   $(".p-pedidos").hide();
 }
-
+//function que se llama desde input radio al seleccionar metodo de pago efectivo en pedidos.html
 function enableTxtEfectivo() {
   $(".efectivo").attr('disabled', false);
 }
-
+//function que se llama desde input radio al seleccionar metodo de pago con tarjetas en pedidos.html
 function disabledTxtEfectivo() {
   $("#pago-efvo").attr('disabled', true);
   $("#pago-efvo").val("");
