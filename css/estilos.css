@@ -816,8 +816,12 @@ iframe {
 }
 
 /*pertenece a pedidos*/
+.main-pedidos {
+  margin-top: 4rem;
+}
+
 .pedido-online {
-  margin-top: 3rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
 }
 
@@ -828,6 +832,7 @@ iframe {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 3rem;
 }
 
 .input-helado {
@@ -847,6 +852,7 @@ select {
   margin-bottom: 2rem;
   border-color: #851370;
   border-radius: 5px;
+  padding: 0 1rem;
 }
 
 select:focus {
@@ -1315,9 +1321,10 @@ img {
   padding-bottom: 5rem;
 }
 
+/* pertenece a pedidos*/
 .sizes {
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 200px;
 }
 
 /*el siguiente formulario pertence a contacto.html*/
@@ -1412,6 +1419,7 @@ fieldset {
   font-size: 1em;
 }
 
+/* modal que pertenece a pedidos */
 .model-container {
   display: -webkit-box;
   display: -ms-flexbox;

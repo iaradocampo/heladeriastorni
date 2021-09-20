@@ -54,6 +54,14 @@ function hideElements() {
   $(".select-pago").hide();
   $(".p-pedidos").hide();
   $(".efectivo").attr('disabled', true);
+  $("#alert-size").hide();
+  $("#alert-sabores").hide();
+  $("#alert-deliway").hide();
+  $("#alert-datos").hide();
+  $("#alert-domicilio").hide();
+  $("#alert-pago").hide();
+  $("#importe-delivery").hide();
+  $("#importe-retiro").hide();
 }
 
 function getRandomNumber() {
@@ -95,66 +103,83 @@ function validarCampos() {
   let datos = $(".info-datos");
 
   if (size === undefined) {
-    alert("Elija un pote de helado!");
+    $("#alert-size").show();
     return false;
+  } else {
+    $("#alert-size").hide();
   }
 
   for (const sabor of arraySabores) {
     if (i < arraySabores.length) {
       if (sabor.value == 0) {
-        alert("Elija un gusto de helado!");
+        $("#alert-sabores").show();
         return false;
       }
       i++;
     }
     i = 0;
   }
+  $("#alert-sabores").hide();
 
   if (deliveryAway == "retiro") {
     valorFinal = true;
+    $("#alert-deliway").hide();
   } else if (deliveryAway == "delivery") {
     valorFinal = true;
+    $("#alert-deliway").hide();
   } else {
-    alert("Elija como quiere acceder a su helado favorito!");
+    $("#alert-deliway").show();
     return false;
   }
 
   if (deliveryAway == "retiro") {
     cantidadDatos = 2;
+    for (let i = 0; i < cantidadDatos; i++) {
+      if (datos[i].value == '') {
+        $("#alert-datos").show();
+        return false;
+      }
+    }
+    $("#alert-datos").hide();
   } else {
     cantidadDatos = 4;
-  }
-
-  for (let i = 0; i < cantidadDatos; i++) {
-    if (datos[i].value == '') {
-      alert("Complete sus datos!");
-      return false;
+    for (let i = 0; i < cantidadDatos; i++) {
+      if (datos[i].value == '') {
+        $("#alert-domicilio").show();
+        return false;
+      }
     }
+    $("#alert-domicilio").hide();
   }
 
   if (medioPago == "online") {
     valorFinal = true;
+    $("#alert-pago").hide();
   } else if (medioPago == "efectivo") {
     valorFinal = true;
+    $("#alert-pago").hide();
   } else {
-    alert("Elija el metodo de pago de su helado favorito!");
+    $("#alert-pago").show();
     return false;
   }
 
   if (medioPago == "efectivo") {
     if (deliveryAway == "delivery") {
       if (importe < (size.importe + 200)) {
-        alert("Ingrese un importe valido, mayor o igual al del valor del pote seleccionado.\nRecuerde que si eligio envio por delivery se añaden $200 al precio del pote.")
+        $("#importe-delivery").show();
         return false;
       }
     } else {
       if (importe < size.importe) {
-        alert("Ingrese un importe valido, mayor o igual al del valor del pote seleccionado.")
+        $("#importe-retiro").show();
         return false;
       }
     }
 
   }
+  $("#importe-delivery").hide();
+  $("#importe-retiro").hide();
+
   // se entiende que como no retorno false, retorna true
   return valorFinal;
 }

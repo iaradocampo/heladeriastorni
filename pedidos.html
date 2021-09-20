@@ -69,16 +69,21 @@
             </div>
         </nav>
     </header>
+    <!--modal que muestra detalle de pedido-->
     <div class="model-container">
         <div class="model">
             <i class="bi bi-x-lg" id="close"></i>
             <p id="mensaje"></p>
         </div>
     </div>
-    <main class="main">
+    <!--contenido principal de la seccion-->
+    <main class="main-pedidos">
         <div class="container">
-            <h1 class="title">¡Pedí online!</h1>
-            <h2 class="title-center">¿Que queres pedir?</h2>
+            <h1 class="title">¡Hace tu pedido online!</h1>
+            <div class="space-section">
+                <h2 class="title-center">¿Que queres pedir?</h2>
+            </div>
+            <!--formulario para pedido online-->
             <form class="pedido-online">
                 <div class="box-helado">
                     <div class="input-helado">
@@ -88,7 +93,11 @@
                     <div class="input-helado">
                     </div>
                 </div>
-                <div class="sabores"></div>
+                <span id="alert-size">*Por favor seleccione el tamaño que desee para su helado</span>
+                <div class="space-section">
+                    <div class="sabores"></div>
+                </div>
+                <span id="alert-sabores">*Por favor seleccione los sabores que desee</span>
                 <div class="space-section">
                     <h2 class="title-center">¿Retiras o te lo llevamos?</h2>
                 </div>
@@ -102,6 +111,8 @@
                         <label for="delivery" id="delivery">Delivery</label>
                     </div>
                 </div>
+                <span id="alert-deliway">*Por favor seleccione si retira en el local o si prefiere envío a
+                    domicilio</span>
                 <div class="datos">
                     <h2 class="title-center">Dejanos tus datos</h2>
                     <div class="input-datos" id="name">
@@ -109,6 +120,7 @@
                         <input class="info-datos" type="text" placeholder="Celular">
                     </div>
                 </div>
+                <span id="alert-datos">*Por favor complete los campos con sus datos</span>
                 <div class="envios">
                     <h2 class="title-center">¿Dónde te lo llevamos?</h2>
                     <div class="input-datos" id="direction">
@@ -116,6 +128,7 @@
                         <input class="info-datos" type="text" id="direccion" placeholder="Dirección">
                     </div>
                 </div>
+                <span id="alert-domicilio">*Por favor complete los campos sus datos</span>
                 <div class="select-pago">
                     <h2 class="title-center">¿Cómo vas a abonar?</h2>
                     <div class="medios-pago">
@@ -130,6 +143,12 @@
                         </div>
                     </div>
                 </div>
+                <span id="alert-pago">*Por favor seleccione un método de pago</span>
+                <span id="importe-delivery">*Por favor ingrese un importe válido, mayor o igual al valor del pote
+                    seleccionado.
+                    Recuerde que si selecciono la opción delivery se añaden $200 al valor final.</span>
+                <span id="importe-retiro">*Por favor ingrese un importe válido, mayor o igual al valor del pote
+                    seleccionado.</span>
                 <p class="p-pedidos"><strong>*El delivery tiene un costo adicional de $200.</strong></p>
                 <div class="btn-pedido">
                     <input type="button" id="open" value="¡Hace tu pedido!">

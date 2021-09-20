@@ -299,14 +299,19 @@ iframe {
 
 /*pertenece a pedidos*/
 
+.main-pedidos{
+    margin-top: 4rem;
+}
+
 .pedido-online {
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-bottom: 5rem;
 }
 
 .box-helado {
     display: flex;
     justify-content: center;
+    margin-bottom: 3rem;
 }
 
 .input-helado {
@@ -323,6 +328,7 @@ select {
     margin-bottom: 2rem;
     border-color: $strong-violet;
     border-radius: 5px;
+    padding: 0 1rem;
 
     &:focus {
         outline: none;
