@@ -35,15 +35,12 @@ $(function () {
 
   //onclick de la cruz del modal
   $("#close").on("click", function () {
-    $(".model").css('transform', 'scale(0)');
-    //reseteo formulario
-    $(".pedido-online")[0].reset();
-    //borro selects ya appendeados
-    $(".option-sabores").remove();
-    //vuelvo a ocultar los elementos que habia mostrado
-    hideElements();
-    //no me gusta pero no encontre otra manera
-    sizeActual = $(".vueltaAUndefined");
+    resetSimulator();
+  });
+
+  //onclick de botón "finalizar compra"
+  $("#comprar").on("click", function () {
+    resetSimulator();
   });
 
 });
@@ -64,6 +61,18 @@ function hideElements() {
   $("#importe-retiro").hide();
 }
 
+function resetSimulator() {
+  $(".model").css('transform', 'scale(0)');
+  //reseteo formulario
+  $(".pedido-online")[0].reset();
+  //borro selects ya appendeados
+  $(".option-sabores").remove();
+  //vuelvo a ocultar los elementos que habia mostrado
+  hideElements();
+  //no me gusta pero no encontre otra manera
+  sizeActual = $(".vueltaAUndefined");
+}
+
 function getRandomNumber() {
   $.ajax({
     method: "GET",
@@ -82,8 +91,8 @@ function getJsonSizes() {
       for (const currentSize of mySizes) {
         sizes.push(currentSize);
         if (i < divSizes.length) {
-          divSizes.eq(i).append(`<img class="sizes" src="${currentSize.url}"><input type="radio" name="tamaños" id="${currentSize.cantidad}" onclick="loadSelectSabores(this.id);">
-            <label for="">${currentSize.importe}</label>`);
+          divSizes.eq(i).append(`<img class="sizes" src="${currentSize.url}"><input type="radio" class="input-size" name="tamaños" id="${currentSize.cantidad}" onclick="loadSelectSabores(this.id);">
+            <label for="importe" class="importe">$${currentSize.importe}</label>`);
           i++;
         }
       }
@@ -137,23 +146,25 @@ function validarCampos() {
     for (let i = 0; i < cantidadDatos; i++) {
       if (datos[i].value == '') {
         $("#alert-datos").show();
+        $("#alert-domicilio").hide();
         return false;
       }
     }
-    $("#alert-datos").hide();
   } else {
     cantidadDatos = 4;
     for (let i = 0; i < cantidadDatos; i++) {
       if (datos[i].value == '') {
         $("#alert-domicilio").show();
+        $("#alert-datos").show();
         return false;
       }
     }
-    $("#alert-domicilio").hide();
   }
 
   if (medioPago == "online") {
     valorFinal = true;
+    $("#alert-datos").hide();
+    $("#alert-domicilio").hide();
     $("#alert-pago").hide();
   } else if (medioPago == "efectivo") {
     valorFinal = true;
@@ -162,6 +173,8 @@ function validarCampos() {
     $("#alert-pago").show();
     return false;
   }
+  $("#alert-domicilio").hide();
+  $("#alert-datos").hide();
 
   if (medioPago == "efectivo") {
     if (deliveryAway == "delivery") {
@@ -289,7 +302,9 @@ function showEnvio() {
   $(".datos").show();
   $(".p-pedidos").show();
   $(".select-pago").show();
+  validarCampos();
 }
+
 //function que se llama desde input radio id="retiro" en pedidos.html
 function showDatos() {
   $(".datos").show();
@@ -298,13 +313,18 @@ function showDatos() {
   $("#direccion").attr('disabled', true);
   $(".select-pago").show();
   $(".p-pedidos").hide();
+  validarCampos();
 }
+
 //function que se llama desde input radio al seleccionar metodo de pago efectivo en pedidos.html
 function enableTxtEfectivo() {
   $(".efectivo").attr('disabled', false);
+  validarCampos();
 }
+
 //function que se llama desde input radio al seleccionar metodo de pago con tarjetas en pedidos.html
 function disabledTxtEfectivo() {
   $("#pago-efvo").attr('disabled', true);
   $("#pago-efvo").val("");
+  validarCampos();
 }

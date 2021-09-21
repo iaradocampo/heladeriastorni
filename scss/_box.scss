@@ -299,7 +299,7 @@ iframe {
 
 /*pertenece a pedidos*/
 
-.main-pedidos{
+.main-pedidos {
     margin-top: 4rem;
 }
 
@@ -350,11 +350,10 @@ select {
     margin: 0 2rem;
 }
 
-#take-away {
-    cursor: pointer;
-}
-
+#take-away,
 #delivery {
+    font-size: 1.4em;
+    margin-top: 1rem;
     cursor: pointer;
 }
 
@@ -364,7 +363,7 @@ select {
 }
 
 .envios {
-    margin-bottom: 3rem;
+    margin: 2rem 0 2rem 0;
 }
 
 .input-datos {
@@ -424,7 +423,9 @@ label {
     width: 20%;
     height: 3rem;
     color: white;
-    &:hover{
+    margin-top: 3rem;
+
+    &:hover {
         background-color: $blue-violet;
         transition: all 0.4s;
     }

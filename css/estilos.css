@@ -363,6 +363,29 @@ h4 {
   text-align: center;
 }
 
+.importe {
+  font-size: 1.6em;
+}
+
+.input-size {
+  margin-left: 4.2rem;
+}
+
+span {
+  font-size: 1.1em;
+  font-weight: 600;
+  text-align: center;
+}
+
+.container-span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*navbar que se mantiene en todas las secciones del sitio*/
 nav {
   background-color: #e1c4ef;
@@ -878,11 +901,10 @@ select option {
   margin: 0 2rem;
 }
 
-#take-away {
-  cursor: pointer;
-}
-
+#take-away,
 #delivery {
+  font-size: 1.4em;
+  margin-top: 1rem;
   cursor: pointer;
 }
 
@@ -892,7 +914,7 @@ select option {
 }
 
 .envios {
-  margin-bottom: 3rem;
+  margin: 2rem 0 2rem 0;
 }
 
 .input-datos {
@@ -961,6 +983,7 @@ label {
   width: 20%;
   height: 3rem;
   color: white;
+  margin-top: 3rem;
 }
 
 #open:hover {
@@ -1325,6 +1348,7 @@ img {
 .sizes {
   width: 250px;
   height: 200px;
+  margin-bottom: 3rem;
 }
 
 /*el siguiente formulario pertence a contacto.html*/
@@ -1435,9 +1459,9 @@ fieldset {
 }
 
 .model {
-  height: 100%;
+  height: 58rem;
   width: 40rem;
-  top: 2rem;
+  top: 1rem;
   margin: auto;
   padding: 20px;
   background-color: #f4eaf9;
@@ -1458,6 +1482,31 @@ fieldset {
   cursor: pointer;
   color: #907CE6;
   position: relative;
+}
+
+.comprar-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: -3rem;
+}
+
+#comprar {
+  background-color: #907CE6;
+  border-radius: 5px;
+  border: none;
+  width: 35%;
+  height: 3rem;
+  color: white;
+}
+
+#comprar:hover {
+  background-color: #9B94FC;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 /*pertenece a footer de todas las secciones*/
