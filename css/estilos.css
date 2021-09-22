@@ -342,7 +342,7 @@ hr {
 .p-pedidos {
   font-size: 1.2em;
   text-align: center;
-  margin: 2rem 0 2rem 0;
+  margin-top: 4rem;
 }
 
 .p-title-model {
@@ -983,7 +983,7 @@ label {
   width: 20%;
   height: 3rem;
   color: white;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 #open:hover {
