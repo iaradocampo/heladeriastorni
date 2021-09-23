@@ -46,6 +46,7 @@ $(function () {
 });
 
 function hideElements() {
+  $(".model-container").hide();
   $(".envios").hide();
   $(".datos").hide();
   $(".select-pago").hide();
@@ -205,6 +206,7 @@ function showModal() {
   let importe = $("#pago-efvo").val();
   let datos = $(".info-datos");
   let i = 0;
+  $(".model-container").show();
 
   //comienzo del armado del mensaje de salida
   let salida = `<h4>Detalle del pedido</h4>`;
